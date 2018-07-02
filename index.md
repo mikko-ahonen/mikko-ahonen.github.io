@@ -1,37 +1,13 @@
-## Welcome to GitHub Pages
+## Jauzo and Mikko Ahonen
 
-You can use the [editor on GitHub](https://github.com/mikko-ahonen/mikko-ahonen.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+Jauzo Oy provides sub-contracting services for Finnish IT conulting companies.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Mikko Ahonen is the leading consultant for Jauzo Oy. He works mainly as a full-stack develop/architect, but may also work in various coordinating roles when needed. He likes to work with startups and in first phases of projects where the roles and requirements are not yet clear.
 
-### Markdown
+He has worked with wide range of technologies, but currently he prefers to work with projects that use python/django, Javascript and Postgres.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+On his free time, he spends time with his family, dances argentine tango. He is also a gentleman scientist, working on microscope automation, image recognition for health care and deep learning algorithms.
 
-```markdown
-Syntax highlighted code block
+## Technical notes
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/mikko-ahonen/mikko-ahonen.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+For some technical nodes, see [Technical Notes](https://mikko-ahonen.github.io/technical-notes.html).
