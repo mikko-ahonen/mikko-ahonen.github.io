@@ -2,5 +2,5 @@ theme: jekyll-theme-minimal
 title: Jauzo Oy
 description: IT Consulting Services
 # logo: 
-show_downloads: "false"
+show_downloads: false
 google_analytics: UA-121653068-1
