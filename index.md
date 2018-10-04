@@ -1,13 +1,12 @@
 ## Jauzo and Mikko Ahonen
 
-Jauzo Oy provides sub-contracting services for IT conulting companies.
+Jauzo Oy provides contract work as well as sub-contracting services for IT consulting companies.
 
-Mikko Ahonen is the leading consultant for Jauzo Oy. He currently works as mainly as full-stack develop/architect, but also takes on various coordinating roles when needed. He likes to work with startups and in first phases of projects where the product concepts, roles, requirements and 
-processess are still not yet clear.
+Mikko Ahonen is the leading consultant for Jauzo Oy. He currently works mainly as full-stack develop/architect, but also takes on various coordinating roles when needed. He likes to work with startups and in first phases of projects where the product concepts, roles, requirements and processess are still hazy.
 
 He has worked with wide range of technologies. Currently he prefers to work with projects that use python/django, Javascript and Postgres.
 
-On his free time, he spends time with his family, dances argentine tango. He is also a gentleman scientist, working on microscope automation, image recognition for health care and deep learning algorithms.
+On his free time, he spends time with his family, and dances various couple dances, includin gargentine tango and lindy hop. He is also a gentleman scientist, working on microscope automation, image recognition for health care and deep learning algorithms.
 
 ## VAT Number
 
