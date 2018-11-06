@@ -16,7 +16,8 @@ On his free time, he spends time with his family, and dances various couple danc
 
 ### E-Invoice
 
-Address 003722786366
+Address: 003722786366
+
 Operator: 003721291126 (Maventa)
 
 ### Paper invoices
