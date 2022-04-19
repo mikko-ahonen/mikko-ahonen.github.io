@@ -2,7 +2,9 @@
 
 Jauzo Oy provides mainly contract and sub-contract work for IT consulting companies.
 
-Mikko Ahonen is the leading consultant for Jauzo Oy. He currently works mainly as full-stack develop/architect, but also takes on various coordinating roles when needed. He likes to work with startups and in first phases of projects where the product concepts, roles, requirements and processess are still hazy.
+Mikko Ahonen is the leading consultant for Jauzo Oy. He currently works on various coordination and technical development roles. 
+
+While he strives in many kinds of projects, he espcially likes to work with startups, and initial phases of projects where the product concepts, roles, requirements and processess are still hazy.
 
 He has worked with wide range of technologies. Currently he prefers to work with projects that use python/django, Javascript and Postgres.
 
@@ -27,7 +29,3 @@ Ask me
 ## Contact information
 
 Best way to reach is through email using the usual first.lastname address convention.
-
-## Technical notes
-
-For some technical nodes, see [Technical Notes](https://mikko-ahonen.github.io/technical-notes.html).
