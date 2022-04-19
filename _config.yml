@@ -2,6 +2,8 @@ theme: jekyll-theme-minimal
 title: Jauzo Oy
 description: IT Consulting Services
 # logo: 
+plugins:
+  - jekyll-analytics
 show_downloads: false
 jekyll_analytics:
   Plausible:
