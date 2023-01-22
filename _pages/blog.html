@@ -1,0 +1,17 @@
+---
+layout: page
+title: Blog
+permalink: /blog/
+image: '/images/06.jpg'
+---
+  <div class="row">
+    <div class="col col-12 col-d-10 col-m-12 push-m-0 push-d-1">
+      <div class="container__inner">
+        <div class="row grid">
+          {% for post in site.posts %}
+            {% include article-content.html %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
