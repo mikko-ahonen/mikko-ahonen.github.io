@@ -5,10 +5,10 @@ description: Your customers may demand certifications, such as ISO 9000, ISO 140
 
 date:   2023-08-23 15:05:00 +0300
 image:  '/images/05.jpg'
-tags:   #[usm, it-service-management, service-management, enterprise-service-management, framework, iso-27000, iso-9000, iso-14000, itil]
+tags:   #[usm, it-service-management, service-management, enterprise-service-management, framework, standard, iso-27000, iso-9000, iso-14000, itil]
 ---
 
-Your customer asks you to certify your organization with a framework such as ISO 9000, ISO 14000, ISO 27000 etc.
+Your customer asks you to certify your organization against a standard such as ISO 9000, ISO 14000, ISO 27000 etc.
 
 You call in the process consultants, they do an audit. They interview your personnel and document your processes. In the end,
 you get the certificate and bunch of files, setting on a file server or intranet, quickly forgotten.
@@ -17,8 +17,8 @@ Next year, you do it again.
 
 Is there a better way?
 
-Although the term management system is often used to describe these frameworks, in practice they do not really help you to manage 
-your business. According to dictionary, to manage means to exert control over; regulate or limit toward a desired end. 
+Although the term management system is often used to describe these standards, in practice they do not really help you to manage 
+your business. According to the dictionary, to manage means to exert control over; regulate or limit toward a desired end. 
 
 Today all businesses are service businesses. Even if you are just selling potatoes, you will legally need to provide a support for returning 
 the bad ones, which makes it a service.
@@ -30,17 +30,20 @@ If you define your services through a systematic method, such as Unified Service
 control of your services. You will immediately see many benefits. For example, the method will expose the gaps in your 
 service offering and processes. Your process documentation will become useful to those participating in the workflows.
 
-One major benefit is that getting the certications becomes simpler. Most certificates and standards have lots of duplication. 
-If your service management method has a way to map process definitions into certification requirements, then you can skip
-most of this duplication. You only need to validate that all the required process definitions are in place, and then you can 
-just give the mapping to your certification auditors.
+Certifying against standards and frameworks also becomes simpler. Most standards and frameworks have lots of repetition and 
+duplication. For example, there are typically multiple ways on how you agree on the service  with your customer,depending
+on the service.
+
+If your service management method has a way to map process definitions into certification requirements, then you can avoid
+most of this repetition. You only need to validate that all the required process definitions are in place, and then you can 
+just point your certification auditors to the mappings.
 
 Even if you take into account the service management method deployment, the total cost is likely to be cheaper than doing the
-certification project the regular way. And next year, when you need to renew your certificates, the price is considerably lower.
+certification project the regular way. And next year, when you need to renew your certificates, the price is even considerably lower.
 
 ---
 
 To learn more about USM, download the free booklet Simple USM by Mikko Ahonen using form
 [here](https://usm.coach/public/resources/). We only ask your industry, providing your email address is optional.
 
-Contact us, and we would be glad to tell you more about how service management will help your organization.
+Contact us, and we would be glad to tell you more about how using a service management method can help your organization.
