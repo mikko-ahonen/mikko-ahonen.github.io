@@ -6,7 +6,7 @@ description: Your customers may demand certifications, such as ISO 9000, ISO 140
 date:   2023-08-23 15:05:00 +0300
 image:  '/images/05.jpg'
 seotags:   [usm, it-service-management, service-management, enterprise-service-management, framework, standard, iso-27000, iso-9000, iso-14000, itil]
-tags:   [usm]
+tags:   [service management]
 ---
 
 Your customer asks you to certify your organization against a standard such as ISO 9000, ISO 14000, ISO 27000 etc.
