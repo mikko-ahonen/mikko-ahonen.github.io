@@ -12,18 +12,10 @@ data integration platform. Here we discuss different methods for data integratio
 from Extract-Transform-Load (ETL) to data streaming.
 
 Previous parts:
-
 * [Part 1: Why to Build a Data Integration Platform?](https://jauzo.com/2023/08/11/why-dip/)
 * [Part 2: About Logging](https://jauzo.com/2023/08/25/logging/)
------
 
-| Extract-Transform-Load | Extract-Load-Transform | API-based          | Data Streaming         |
-| ---------------------- | ---------------------- | ------------------ | ---------------------- |
-| * Traditional method for reporting and analytics  | * More recent method for reporting and analytics | * Typical method in operative applications | * More recent method for operative applications |
-| * Has good tooling, well-understood    | * Cloud tooling still under active development | * Has good tooling, well-understood, integration platforms may help | * Integration platform must support data streaming |
-| * Often batch processing | * Often batch processing with cloud data pipelines | * Data stays in the source system | * Near real-time data streaming |
-| * For data marts and data warehouses | * For data lakes | * For operative applications | * For cost-efficient, performant and reliable operative applications in enterprise environments |
-| * Data freshness challenging | * Data freshness challenging, data marts expensive | * Backend systems may limit availability and performance, multiple copies of data models | * Not suitable for highly interactive use |
+***
 
 Extract-Transform-Load (ETL) is the traditional, and most widely adopted
 approach to data integrations. It is common for example when using data marts 
@@ -47,6 +39,14 @@ Later, new products, such as Hadoop, contributed to the emergence of what is
 called a data lake. These products allowed ingestion of unstructured data along the
 structured data. As organizations may have lots of unstructured data, 
 the data lake allows access to more of the data in the organization.
+
+| Extract-Transform-Load | Extract-Load-Transform | API-based          | Data Streaming         |
+| ---------------------- | ---------------------- | ------------------ | ---------------------- |
+| * Traditional method for reporting and analytics  | * More recent method for reporting and analytics | * Typical method in operative applications | * More recent method for operative applications |
+| * Has good tooling, well-understood    | * Cloud tooling still under active development | * Has good tooling, well-understood, integration platforms may help | * Integration platform must support data streaming |
+| * Often batch processing | * Often batch processing with cloud data pipelines | * Data stays in the source system | * Near real-time data streaming |
+| * For data marts and data warehouses | * For data lakes | * For operative applications | * For cost-efficient, performant and reliable operative applications in enterprise environments |
+| * Data freshness challenging | * Data freshness challenging, data marts expensive | * Backend systems may limit availability and performance, multiple copies of data models | * Not suitable for highly interactive use |
 
 Data lakes use a new integration method, Extract-Load-Transform (ELT).
 All the data in the source systems is extracted and loaded into the data lake. 
@@ -90,6 +90,8 @@ This approach requires investment as well. The source systems need to be modifie
 support data streaming. You also need a data integration platform that supports streaming data. 
 Some operative applications might also not be a good fit with the data streaming method. For example,
 when the use is highly interactive, data streaming might not be suitable. 
------
+
+***
+
 If you need consulting related to system architectures in general, or data integrations in
 particular, please do not hesitate to contact Mikko Ahonen through the contact page.
