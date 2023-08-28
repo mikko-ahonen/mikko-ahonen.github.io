@@ -78,8 +78,8 @@ Some backend systems might also not support the performance and availability
 needs of operative applications.
 
 Another approach to data integrations is data streaming. If you have established
-log of all the changes to the source data, then applying those changes to another system
-allows you to maintain near real-time copy of the original data.
+a log of all the changes to the source data, then applying those changes to another system
+allows you to maintain a near real-time copy of the original data.
 
 The benefit of this method is that providing access to near real-time data becomes possible. Also, 
 as creating additional copies of the data is inexpensive, serving some of the complex
