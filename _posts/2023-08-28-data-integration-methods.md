@@ -71,7 +71,7 @@ Therefore, direct APIs are often used for data integrations for operative
 applications. The data needed by operative applications may reside in multiple 
 backend systems. In typical modern architecture, the data is mapped to a 
 more suitable data model, perhaps inside the operative application.
-If you have many operative applications, each will neturally evolve their own internal
+If you have many operative applications, each will naturally evolve their own internal
 data model. Ultimately, you end up with multiple custom data models for the same data. This
 encourages tight couoling, making data model changes difficult in the source systems.
 Some backend systems might also not support the performance and availability 
