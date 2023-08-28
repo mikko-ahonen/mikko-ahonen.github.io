@@ -11,9 +11,10 @@ This post is third part in a series about building and adopting a modern streami
 data integration platform. Here we discuss different methods for data integration, 
 from Extract-Transform-Load (ETL) to data streaming.
 
-[Part 1: Why to Build a Data Integration Platform?](https://jauzo.com/2023/08/11/why-dip/)
+Previous parts:
 
-[Part 2: About Logging](https://jauzo.com/2023/08/25/logging/)
+* [Part 1: Why to Build a Data Integration Platform?](https://jauzo.com/2023/08/11/why-dip/)
+* [Part 2: About Logging](https://jauzo.com/2023/08/25/logging/)
 -----
 
 | Extract-Transform-Load | Extract-Load-Transform | API-based          | Data Streaming         |
