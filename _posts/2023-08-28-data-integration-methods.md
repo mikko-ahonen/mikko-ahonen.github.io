@@ -54,11 +54,11 @@ Transformation is done only for the data that is needed somewhere is transformed
 consumption. This has the benefit that only transformation phase of data pipeline
 needs to be changed when new data is needed.
 
-Many organizations learned that data lakes became dumping grounds for unstructured, semi-structured 
-and structured data and data lakes turned into data swamps. The formats for different kind of data are naturally 
-different -- think video vs. database table. Data quality is difficult to handle, meaning
-quality issue flow downstream. It is also difficult to find the data from data lakes,
-and data is often duplicated in multiple places.
+Many organizations learned that the data lake easily becames a dumping ground for unstructured, semi-structured 
+and structured data. The data lake turns into a data swamp. The formats for different kind of data are naturally 
+different -- think of a video vs. a database table. Data quality is difficult to handle, meaning
+quality issues flow downstream. It is also difficult to find the data from data lakes,
+which means data is often duplicated in multiple places.
 
 Both ETL and ELT typically use batch processing. If data sizes are large, 
 the data is synced perhaps once per day. For reporting and analytics this
