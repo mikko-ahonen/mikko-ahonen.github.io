@@ -14,8 +14,7 @@ from Extract-Transform-Load (ETL) to data streaming.
 [Part 1: Why to Build a Data Integration Platform?](https://jauzo.com/2023/08/11/why-dip/)
 
 [Part 2: About Logging](https://jauzo.com/2023/08/25/logging/)
----
-
+-----
 
 | Extract-Transform-Load | Extract-Load-Transform | API-based          | Data Streaming         |
 | ---------------------- | ---------------------- | ------------------ | ---------------------- |
@@ -90,6 +89,6 @@ This approach requires investment as well. The source systems need to be modifie
 support data streaming. You also need a data integration platform that supports streaming data. 
 Some operative applications might also not be a good fit with the data streaming method. For example,
 when the use is highly interactive, data streaming might not be suitable. 
----
+-----
 If you need consulting related to system architectures in general, or data integrations in
 particular, please do not hesitate to contact Mikko Ahonen through the contact page.
