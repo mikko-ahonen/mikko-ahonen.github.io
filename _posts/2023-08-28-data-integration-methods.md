@@ -12,27 +12,18 @@ data integration platform. Here we discuss different methods for data integratio
 from Extract-Transform-Load (ETL) to data streaming.
 
 [Part 1: Why to Build a Data Integration Platform?](https://jauzo.com/2023/08/11/why-dip/)
+
 [Part 2: About Logging](https://jauzo.com/2023/08/25/logging/)
 ---
 
 
 | Extract-Transform-Load | Extract-Load-Transform | API-based          | Data Streaming         |
 | ---------------------- | ---------------------- | ------------------ | ---------------------- |
-| * Traditional method   | * More modern method   | * Typical method   | * Modify source system |
-| * Has good tooling,    | * Cloud tooling still  |   in operative     |   to record all changes|
-| well-understood        |   under active         |   applications     |   to change logs       |
-| * Typically used with  |   development          | * Data stays in the| * Integration platform |
-| batch processing       | * Typically used with  |   source system    |   must support data    |
-| * For data marts and   |   analytics data       | * Backend system   |   streaming            |
-| data warehouses        |   pipelines            |   availability and | * Cached copy of data  |
-| * Data freshness       | * Data freshness       |   performance      |   easy to create,      |
-| challenging            |   challenging          |   characteristics  |   allowing better      |
-| * Often used in old    | * High costs of data   |   impact operative |   performance and      |
-| analytics and reporting|   marts                |   applications     |   availability         |
-| platforms              | * Often used for new   |                    | * Not suitable for     |
-|                        |   analytics and        |                    |   example when         |
-|                        |   reporting platforms  |                    |   use is very          |
-|                        |                        |                    |   interactive          |
+| * Traditional method for reporting and analytics  | * More recent method for reporting and analytics | * Typical method in operative applications | * More recent method for operative applications |
+| * Has good tooling, well-understood    | * Cloud tooling still under active development | * Has good tooling, well-understood | * Integration platform must support data streaming |
+|  * Often batch processing | * Often batch processing with cloud data pipelines | * Data stays in the source system | * Near real-time data streaming |
+| * For data marts and data warehouses | * For data lakes | * For operative applications | * For cost-efficient, performant and reliable operative applications in enterprise environments |
+| * Data freshness challenging | * Data freshness challenging, data marts expensive | * Backend systems may limit availability and performance, multiple copies of data models | * Not suitable for highly interactive use |
 
 Extract-Transform-Load (ETL) is the traditional, and most widely adopted
 approach to data integrations. It is common for example when using data marts 
