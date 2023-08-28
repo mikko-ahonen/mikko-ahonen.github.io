@@ -7,6 +7,7 @@ image:  '/images/industrial-piping.jpeg'
 seotags:   [datahub, data-integration, data-integration-platform, architecture, integration, etl, elt, api, data-streaming]
 tags:   [data integration]
 ---
+<sup>
 This post is third part in a series about building and adopting a modern streaming 
 data integration platform. Here we discuss different methods for data integration, 
 from Extract-Transform-Load (ETL) to data streaming.
@@ -14,6 +15,7 @@ from Extract-Transform-Load (ETL) to data streaming.
 Previous parts:
 * [Part 1: Why to Build a Data Integration Platform?](https://jauzo.com/2023/08/11/why-dip/)
 * [Part 2: About Logging](https://jauzo.com/2023/08/25/logging/)
+</sup>
 
 ***
 
