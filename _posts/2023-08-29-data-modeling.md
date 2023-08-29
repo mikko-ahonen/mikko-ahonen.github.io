@@ -21,8 +21,8 @@ Your Information Architecture (IA) may include data models at various levels of 
 
 | Contextual data model  | Conceptual data model | Logical data model | Integration data model | Physical data model |
 | ---------------------- | --------------------- | ------------------ | ---------------------- | ------------------- |
-| * Block-level diagram of high-level subject areas and what kind of entities there are | * Most important entities and their key attributes | * All entities and all of their attributes, but no concern for implementation details | * All entities and their attributes, data transfer details may impact models | * All entities and their attributes, implementation details may impact models |
-| * Useful for example for specifying ownerships, making roadmaps, as high level map |  Useful for facilitating a wide agreement on key concepts within organization | Useful as the basic building block of IA | Useful as canonical data model when using hub-and-spoke integrations, not point-to-point integrations | * Useful for understanding individual systems |
+| Block-level diagram of high-level subject areas and what kind of entities there are | Most important entities and their key attributes | All entities and all of their attributes, but no concern for implementation details | All entities and their attributes, data transfer details may impact models | All entities and their attributes, implementation details may impact models |
+| Useful for example for specifying ownerships, making roadmaps, as high level map |  Useful for facilitating a wide agreement on key concepts within organization | Useful as the basic building block of IA | Useful as canonical data model when using hub-and-spoke integrations, not point-to-point integrations | Useful for understanding individual systems |
 
 Not all of these levels are needed in all organizations. However, the bigger
 the organization, more levels you will probably find useful.
