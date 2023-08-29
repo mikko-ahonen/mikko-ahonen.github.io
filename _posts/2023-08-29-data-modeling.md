@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Role of Data Modeling in Data Integrations
-description: When working with data integration platforms, it makes sense to think about your information architecture, especially the role that data modeling has in your integrations.
+description: When working with data integration platforms, it makes sense to think the role that data modeling has in your integrations.
 date:   2023-08-29 10:48:00 +0300
 image:  '/images/dark-tile.jpeg'
 seotags:   [datahub, data-integration, data-integration-platform, architecture, integration, data-modeling]
