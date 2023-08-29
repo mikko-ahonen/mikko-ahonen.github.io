@@ -36,10 +36,12 @@ data model is already outdated.
 
 Most of the cost of implementing integrations is about specifying what needs to
 be done. Agreeing on syntax (such as CSV or JSON) and attribute names is pretty
-straight-forward. The real cost is in understanding the business semantics of
-various fields and their possible values, and how they need to be mapped and
+straight-forward.
+
+The real cost is in understanding the business semantics of various entities,
+attributes and their possible values, and how they need to be mapped and
 cleaned up for downstream systems. By using canonical data models in your
-integrations, it is possible to reuse this work, and reduce the costs of later 
+integrations, it is possible to reuse this work, and reduce the costs of later
 integrations.
 
 In one organization, there was a need to work on the Information
