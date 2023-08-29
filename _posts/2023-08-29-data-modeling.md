@@ -34,6 +34,13 @@ billions. In this case, creating a full-blown logical data model from zero is
 probably going to take several years. By the time you are done, the logical
 data model is already outdated.
 
+Most of the cost of implementing integrations is about specifying what needs to
+be done. Agreeing on syntax (such as CSV or JSON) and attribute names is pretty
+straight-forward. The real cost is in understanding the business semantics of
+various fields and their possible values, and how they need to be mapped and
+cleaned up for downstream systems. By using canonical data models in your
+integrations, it is possible to reduce the costs of later integrations.
+
 In one organization, there was a need to work on the Information
 Architecture. At the same time, we were developing DataHub, centralized integration platform with
 support for real-time data streams. DataHub required having a coherent canonical
@@ -52,6 +59,10 @@ were then used as the input for iteratively extending the logical data model.
 We chose the iterative approach, because we knew that a comprehensive and detailed
 logical data model would take several years to finish, and we did not have that time.
 
+When possible, we also identified and collected the reference data that could be
+used to formally define the value set for the attribute. There was both 
+internal and external reference data.
+
 Because we developed the logical data model iteratively, our integrations
 needed to support iterative approach as well.  For this purpose, we developed
 our own Domain-Specific Language (DSL) that was used to define the integration
@@ -66,6 +77,7 @@ for multiple purposes with the exact semantics we needed.
 The data models, described with DSL, were stored in the git repository. This allowed us to 
 establish a release process for the data models. The system supported multiple concurrent 
 versions of the data models, with fully automated schema evolution.
+
 
 ***
 
