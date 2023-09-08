@@ -26,6 +26,8 @@ This post is about the core architectural patterns, rather than comprehensive "r
 architectures". Support functions, such as monitoring, data quality, reconcilation, 
 monitoring, governance etc. are not included in the diagrams.
 
+### Traditional Data Integration Architecture
+
 ![Traditional Data Integration Architecture](/images/trad-architecture.png)
 
 The traditional data integration is based on ETL batch processing. Data is extracted from source systems, 
@@ -35,7 +37,9 @@ data warehouse is used for reporting, often through data marts.
 The benefits of this architecture are the relative simplicity, tool support and performance. The downside 
 is data freshness due to batch processing, which makes it unsuitable for operative applications (OLTP loads).
 
-![Big Data Integration Architecture](/images/cloud-big-data-architecture.png)
+### Cloud Big Data Data Integration Architecture
+
+![Cloud Big Data Integration Architecture](/images/cloud-big-data-architecture.png)
 
 More recently, data integrations are being built with big data integration architecture.
 They are running on the cloud and based on ELT batch processing. All data is extracted from source systems,
@@ -49,6 +53,8 @@ Performance compared to ETL batch processing may be another benefit.
 
 Such architectures also have limitations for operative applications. The technology is not optimized for
 OLTP loads, and licensing costs may also limit the usefulfulness of this architecture for operative applications.
+
+### Lambda Architecture
 
 ![Lambda Architecture](/images/lambda-architecture.png)
 
@@ -66,7 +72,9 @@ More difficult issue to solve is data integrity. As there is no central pipeline
 If there are relationships between systems, different "clock speeds" of batch and near real-time 
 integrations mean that enforcing data integrity is very complex.
 
-![Kappa Architecture](/images/lambda-architecture.png)
+### Kappa Architecture
+
+![Kappa Architecture](/images/kappa-architecture.png)
 
 Kappa architecture is an evolution over Lambda architecture. It is often possible to stream all the 
 batch data through real-time data streams as well. This simplifies the architecture. Since there is single control 
