@@ -100,7 +100,7 @@ lose the flexibility of modifying codes on the fly.
 
 You can also create a publisher that broadcasts the reference data changes to interested parties and systems
 if your git service provider (GitHub, GitLab etc.) has a method for listening of change events to the
-repository. Alternatively, you can build your own publisher by detecting the changes.
+repository. Alternatively, you can build your own publisher by detecting the changes periodically.
 
 I have found it useful to define the codes as typed and human-readable format 
 instead of numeric values. In a corporate environment, debugging code values
@@ -125,8 +125,7 @@ adding new codes and deprecating old codes. If you use git, this frontend should
 requests from the changes. This way developers can maintain control of the changes.
 
 Code set values should never be removed, because there may always be some system or temporary 
-storage that contains those values. Instead, use a deprecation mechanism, by marking some codes as 
-deprecated.
+storage that contains those values. Instead, mark the codes that are no longer valid as deprecated.
 
 While this provides you with a lightweight code service, this is only the technical aspect. The difficult part 
 is the governance model, including the workflows for updating the reference data, adding new reference data etc.
