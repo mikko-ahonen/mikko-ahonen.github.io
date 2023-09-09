@@ -95,7 +95,7 @@ are supported. Other type of reference data is excluded from this service.
 
 By using git, you automatically have support for versioning.  Integration
 is also simple, as JSON format can be directly incorporated into application builds. 
-This means that in many cases, you do not even need a seperate REST call, although you
+This means that in many cases, you do not even need a seperate REST call, although in this case you
 lose the flexibility of modifying codes on the fly.
 
 You can also create a publisher that broadcasts the reference data changes to interested parties and systems
