@@ -5,7 +5,7 @@ description: Many enterprises have reference data. Often larger business applica
 service*,  used to store and administer various code sets used by the
 application.
 date:   2023-09-09 10:32:00 +0300
-image:  '/images/dominos.jpeg'
+image:  '/images/dominoes-falling.jpeg'
 seotags:   [datahub, data-integration, data-integration-platform, architecture, integration, data-modeling, reference-data, code-sets, code-service]
 tags:   [data integration]
 ---
