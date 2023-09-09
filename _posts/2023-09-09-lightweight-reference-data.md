@@ -2,7 +2,6 @@
 layout: post
 title:  Lightweight Reference Data
 description: Many enterprises have reference data, but it may not be systematically managed. This may be centrally managed in the data warehouse tables. Additionally, some larger business applications often internally some code sets. This post describes a lightweight option for storing subset of reference data, called code sets.
-application.
 date:   2023-09-09 10:32:00 +0300
 image:  '/images/dominoes-falling.jpeg'
 seotags:   [datahub, data-integration, data-integration-platform, architecture, integration, data-modeling, reference-data, code-sets, code-service]
