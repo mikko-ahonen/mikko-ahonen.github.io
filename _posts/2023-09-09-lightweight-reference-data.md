@@ -56,12 +56,12 @@ very clear about the usage, code sets easily get reused for other purpose, which
 be close, but may be semantically very different. For example, list of existing 
 countries might be reused as a list of countries of birth.
 
-Such semantical data quality issues may be compounded by quick fixes. If a 
-customer reports that they cannot add their country of birth, the reason might be that
-the country no longer exists. If the generic list of countries is the same as the list of 
-birth countries, then the missing country will be added to list, which will 
-break the code sets both semantically, and in practice if somebody tries to
-update the changes from some ISO data source.
+Such semantical data quality issues may be compounded by quick fixes. If 
+a customer reports that they cannot add their country of birth, the reason might be that the country 
+no longer exists. If the generic list of countries is the same as the list of 
+birth countries, then the missing country will be added to the list, which will 
+break the code sets both semantically and practically. Updating the data based on ISO data source
+changes becomes unfeasible or at least difficult.
 
 Adding new values to code sets may also cause more subtle issues. There are
 some code sets, where adding a new value invalidates the old values. Gender is
