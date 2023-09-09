@@ -76,7 +76,7 @@ link ownership to data domains. Additionally, it is very helpful to link the ref
 and code sets in particular to the conceptual data models.
 
 Commercial reference data products exist. I don't have personal experience using such 
-systems, so I will skip.
+systems, so I will not comment on them.
 
 However, I have seen multiple custom implementations of centralized code services. As code sets
 seem deceptively simple on the surface, it seems like a good idea to implement your own.
