@@ -1,8 +1,7 @@
 ---
 layout: post
 title:  Lightweight Reference Data
-description: Many enterprises have reference data. Often larger business applications have internally some code sets, and there may be common for example in the data warehouse. This post 
-service*,  used to store and administer various code sets used by the
+description: Many enterprises have reference data, but it may not be systematically managed. This may be centrally managed in the data warehouse tables. Additionally, some larger business applications often internally some code sets. This post describes a lightweight option for storing subset of reference data, called code sets.
 application.
 date:   2023-09-09 10:32:00 +0300
 image:  '/images/dominoes-falling.jpeg'
@@ -10,7 +9,7 @@ seotags:   [datahub, data-integration, data-integration-platform, architecture, 
 tags:   [data integration]
 ---
 This post is sixth part in a series about building and adopting a modern streaming data integration platform. In this post 
-I will describe a lightweight option for storing subset of reference data, called code sets, 
+I will describe a lightweight option for storing subset of reference data, called code sets.
 
 Previous parts:
 * [Part 1: Why to Build a Data Integration Platform?](https://jauzo.com/2023/08/11/why-dip/)
@@ -21,13 +20,13 @@ Previous parts:
 
 ***
 
-Many larger business applications have something that can be called a *code
-service*,  used to store and administer various code sets used by the
+Many larger business applications have something that can be called a code
+service,  used to store and administer various code sets used by the
 application. Technically, the code service might be a microservice, a set of
 database tables or it might be just a set of configuration files. In this post,
-I will use the term *code service* regardless of technology used to implement it.
+I will use the term code service regardless of technology used to implement it.
 
-The *code service* typically has many code sets, and each code set consists of a list of codes, 
+The code service typically has many code sets, and each code set consists of a list of codes, 
 with corresponding names. If the system supports localization, there may be multiple translations 
 for the names. 
 
