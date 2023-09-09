@@ -48,7 +48,8 @@ postal codes and municipalities.  There may also be a hierarchy between the code
 sets. One typical example of a hierarchy is list of industries and the related sub-industries.
 
 Many data quality issues are related to reference data. Some of them are obvious, 
-such as when the processes to update the reference are not working properly. 
+such as when the reference data ownership is not clear, or organizational procedures to update 
+the reference are not working properly. 
 
 Another source of data quality issues is the misuse of code sets. Unless you are 
 very clear about the usage, code sets easily get reused for other purpose, which appears to 
