@@ -98,25 +98,27 @@ is also simple, as JSON format can be directly incorporated into application bui
 This means that in many cases, you do not even need a seperate REST call, although you
 lose the flexibility of modifying codes on the fly.
 
-you can also create a publisher that broadcasts the reference data changes to interested parties and systems
-if you are using some git service (GitHub, GitLab etc.) that provides events of the changes. Alternatively,
-you can build your own publisher by detecting the changes.
+You can also create a publisher that broadcasts the reference data changes to interested parties and systems
+if your git service provider (GitHub, GitLab etc.) has a method for listening of change events to the
+repository. Alternatively, you can build your own publisher by detecting the changes.
 
 I have found it useful to define the codes as typed and human-readable format 
 instead of numeric values. In a corporate environment, debugging code values
-from logs and integration messages becomes much easier. If you want, you can use the URN (Uniform
-Resource Name) standard with extensions, or you can invent your own syntax.
+from logs and integration messages becomes easier. If you want, you can use the URN (Uniform
+Resource Name) standard (RFC 2141), or you can invent your own syntax.
 
 An example of a value for "lang" code set value for Finnish could be "urn:x-xyz:code:lang:fin", where xyz 
 would be your organization name. The method supports hierarchical values almost out of the box, as 
-you can just add more parts to the URNs.
+you can just add more parts to the end of the URNs.
 
-When using git, you can create build processes that Automatically generate a client library for developers.
-Such a library should support some basic syntax checking and getting the values. This will help in the adoption.
+To help adoption of such a code service, you should probably have client libraries. They should provide
+the developers with enumerations (such as Java enum) of possible values of each code set. You can create 
+build processes that automatically generate these libraries from the code sets. Just make sure that the
+invalid values fail gracefully.
 
-You should have a validity checker, for example as git pre-commit hook, to ensure data quality. The checker 
-should verify the JSON format, required fields, required translations, duplicates, that the URN naming follows
-conventions etc.
+You should have a validity checker for the code sets to ensure data quality. This can be implemented
+as a git pre-commit hook. The checker should verify the JSON format, required fields, required translations, 
+duplicates, that the URN naming follows conventions etc.
 
 It is helpful to provide the business users with a client for editing code set translations,
 adding new codes and deprecating old codes. If you use git, this frontend should create merge 
@@ -126,8 +128,8 @@ Code set values should never be removed, because there may always be some system
 storage that contains those values. Instead, use a deprecation mechanism, by marking some codes as 
 deprecated.
 
-Such a lightweight code service is only the technical aspect. The difficult part will be deploying the workflows for 
-updating the reference data, adding new reference data etc.
+While this provides you with a lightweight code service, this is only the technical aspect. The difficult part 
+will be deploying the workflows for updating the reference data, adding new reference data etc.
 
 ***
 
