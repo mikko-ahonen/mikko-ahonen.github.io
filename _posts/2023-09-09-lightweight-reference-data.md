@@ -40,8 +40,8 @@ be more complex.
 
 The list of countries is well-defined by ISO standards. When you dig deeper, however,
 there is more complexity. For example, there exists multiple (two-letter, three-letter, numeric) 
-codes for each country, and not all countries have all the codes. There are also
-political disputes about countries and the borders of countries.
+codes for each country, and not all countries have all the codes. Some codes have been
+reassigned. There are also political disputes about countries and their borders.
 
 Another example of more complex reference data is the relationship between
 postal codes and municipalities.  There may also be a hierarchy between the code
@@ -129,7 +129,7 @@ storage that contains those values. Instead, use a deprecation mechanism, by mar
 deprecated.
 
 While this provides you with a lightweight code service, this is only the technical aspect. The difficult part 
-will be deploying the workflows for updating the reference data, adding new reference data etc.
+is the governance model, including the workflows for updating the reference data, adding new reference data etc.
 
 ***
 
