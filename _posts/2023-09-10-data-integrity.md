@@ -27,7 +27,7 @@ As services are seperate, you will have references that cross the service bounda
 Microservice architecture make maintaining proper data integrity very difficult. 
 
 Having worked in financial sector as well as in Core R&D for a distributed
-database system, I value data integrity highly. But even if your system does
+database system, I have learned to appreciate data integrity. But even if your system does
 not directly have strict data integrity requirements, taking data integrity
 seriously would simplify application development and make applications more robust.
 
@@ -64,19 +64,20 @@ notion the data integrity features of Transaction Processing Monitors (TPM)
 such as CICS and Tuxedo, as well as message queues.
 
 In TPM, you can build services. Their scope can roughly be compared to a REST
-endpoints or serverless services (using technology such as AWS Lambda). The
+endpoint or a serverless service (such as AWS Lambda). The
 difference is that the TPM services can call other services within the context
-of the transaction.  Eventually, when the service call tree has been
+of the higher transaction.  Eventually, when the service call tree has been
 completed, the transaction is either committed or rolled back, maintaining the
 data integrity, including all the ACID properties (atomicity, consistency, isolation
 and durability).
 
-Modern software development is missing modern equivalent of TPM. We need a platform 
-where it is possible to write services that call other services in the context of a transaction, while
-still keeping the ability to deploy each service separately. It could be built on top of 
-REST endpoints or serverless services, but there is probably a big performance degration.
+Modern software development is missing a modern equivalent of TPM systems that the
+mainframes have. We need a platform where it is possible to write services that call
+other services in the context of a transaction, while still keeping the ability
+to deploy each service separately. It could be built on top REST or serverless
+technology, but the performance penalty may be too much.
 
-Imagine how much easier it would be to develop applications, when you can rely on data integrity.
+Imagine how much easier it would be to develop applications when you can rely on data integrity.
 
 ***
 
