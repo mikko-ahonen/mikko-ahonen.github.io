@@ -24,7 +24,7 @@ Previous parts:
 In modern software development, microservice architectures are the norm. 
 In microservices architecture, you need to split your systems into smaller services. 
 As services are seperate, you will have references that cross the service boundaries. 
-Microservice architecture make maintaining proper data integrity very difficult. 
+Microservice architectures make it very difficult to maintain proper data integrity. 
 
 Having worked in financial sector as well as in Core R&D for a distributed
 database system, I have learned to appreciate data integrity. But even if your system does
