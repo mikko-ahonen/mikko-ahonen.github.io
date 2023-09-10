@@ -53,15 +53,16 @@ distributed transaction handling logic. This requires lots of effort. It is also
 very difficult to get the details correct in all of the error scenarios.
 
 Databases have solved the data integrity problem already in 70s. Why are we
-leaving the difficult part, the data integrity, to the developers? Is the selling
-point of microservices, the ease of deployment, worth the price? A pushback
-against microservice architectures seems to be brewing, and I think it is
+leaving the difficult part of software development, the data integrity, to the developers?
+Why don't we have platforms that help us with data integrity? Is the selling
+point of microservices, the ease of seperate development and deployment, worth the price? 
+A pushback against microservice architectures seems to be brewing, and I think it is
 partly for this reason. But that is a seperate discussion.
 
 An ex-collegue gifted me with a t-shirt with the text I &#9829; Mainframe. Neither
 of us has much real-life experience using mainframes, so we have this romantic
 notion the data integrity features of Transaction Processing Monitors (TPM)
-such as CICS and Tuxedo, as well as message queues.
+such as CICS and Tuxedo.
 
 In TPM, you can build services. Their scope can roughly be compared to a REST
 endpoint or a serverless service (such as AWS Lambda). The
@@ -71,13 +72,14 @@ completed, the transaction is either committed or rolled back, maintaining the
 data integrity, including all the ACID properties (atomicity, consistency, isolation
 and durability).
 
-Modern software development is missing a modern equivalent of TPM systems that the
-mainframes have. We need a platform where it is possible to write services that call
-other services in the context of a transaction, while still keeping the ability
-to deploy each service separately. It could be built on top REST or serverless
-technology, but the performance penalty may be too much.
+Modern software development is missing a modern equivalent of those mainframe
+TPM systems.  We need a platform where it is possible to write services that
+call other services in the context of a transaction, while still keeping the
+ability to deploy each service separately. It could be built on top REST or
+serverless technology, but the performance penalty may be too high.
 
-Imagine how much easier it would be to develop applications when you can rely on data integrity.
+Imagine how much easier it would be to develop applications when you can rely
+on data integrity.
 
 ***
 
