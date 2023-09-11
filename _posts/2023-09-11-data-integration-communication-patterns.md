@@ -1,7 +1,9 @@
 ---
 layout: post
 title:  Communication Patterns In Data Integrations
-description: 
+description: Data integrity is especially important in data integrations, whether you use batch or stream processing to deliver data.
+There are multiple communication patterns available, and only some of them are useful for real-time integrations. All of them
+have some caveats regarding data integrity.
 date:   2023-09-11 11:05:00 +0300
 image:  '/images/queue.png'
 seotags:   [data, data-integration, data-integrity, communication-patterns]
@@ -23,11 +25,12 @@ Previous parts:
 ***
 
 Data integrity is especially important in data integrations, whether you use batch or stream processing to deliver data.
-There are multiple communication patterns available, and only some of them are useful for real-time integrations.
+There are multiple communication patterns available, and only some of them are useful for real-time integrations. All of them
+have some caveats regarding data integrity.
 
 ### Full Copy
 
-Traditional batch data integration are typically the easiest to make robust in
+Traditional batch data integrations are typically the easiest to make robust in
 terms of single-system data integrity.
 
 If you make a full database copy from source to the target system in a single
@@ -77,7 +80,7 @@ multiple change events (for example one for phone number, another for address et
 data master system, there are situations when conflict will happen when customer data is
 replicated to another system.
 
-### Queues
+### Entities In Queues
 
 The traditional mechanism for streamed data integrations is to use queues. The difference
 between notification is to include the actual data in the queue messages.
