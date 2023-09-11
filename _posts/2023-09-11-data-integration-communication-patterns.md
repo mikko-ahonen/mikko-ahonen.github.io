@@ -76,7 +76,7 @@ cascading changes to other systems that happen in different order. This is not o
 issue. If you have a frontend for changing customer contact information and the single save button will cause
 multiple change events (for example one for phone number, another for address etc.) on the customer 
 data master system, there are situations when conflict will happen when customer data is
-replicated to another system.
+replicated to an another system.
 
 ### Entities In Queues
 
