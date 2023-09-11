@@ -1,13 +1,12 @@
 ---
 layout: post
-title:  Ordering, Transactions and Exactly-Once Semantics in Data Integrations
+title:  Ordering, Transactions and Exactly Once Semantics in Data Integrations
 description: There are three important aspects of robust data integrations when using queues: global ordering of messages, multi-message transactionality, and exactly-once semantics.
 date:   2023-09-12 11:05:00 +0300
 image:  '/images/balls.png'
 seotags:   [data, data-integration, data-integrity, communication-patterns]
 tags:   [data integration]
 ---
-
 This post is ninth part in a series about building and adopting a modern
 streaming data integration platform. In this post I will discuss three important aspects of robust data integrations
 when using queues: global ordering of messages, multi-message transactionality, and exactly-once semantics. Focus is
