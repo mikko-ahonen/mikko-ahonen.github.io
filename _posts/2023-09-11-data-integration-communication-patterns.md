@@ -91,8 +91,8 @@ but any solution that sends the changes incrementally will have the same issue.)
 
 One business action, such as creating a new customer, may cause creation of
 multiple conceptual level entities, and even more database entities. If
-customer needs to be created in multiple systems, such as customer master and
-CRM, synchronizing the business action with changes in entities becomes even more difficult.
+customer needs to be created in multiple systems, such as the customer data master and
+the CRM, synchronizing the business action with changes in entities becomes even more difficult.
 
 Database Change-Data-Capture (CDC) mechanisms work on the granularity of the 
 database-level entities. But it is often preferable to stream changes to entities on 
