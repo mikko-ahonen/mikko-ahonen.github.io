@@ -63,7 +63,7 @@ often using a REST call.
 
 This solution may be more robust regarding failures, depending on the
 notification mechanism. Some solutions can enforce single ordering of events. 
-Apache Kafka is commonly used, which allows the source to system to acknowledge the
+Apache Kafka is commonly used, which allows the target system to acknowledge the
 notification only after the change has been permanently stored.
 
 The weakness of this kind of solutions is subtle. If there are multiple changes to 
