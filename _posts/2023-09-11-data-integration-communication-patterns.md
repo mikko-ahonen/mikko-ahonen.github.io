@@ -88,8 +88,8 @@ This is difficult to make work for data with high volume and high latency, such 
 but in most cases the requirements are not so demanding.
 
 This is the most robust mechanism, but even this solution has some caveats.
-One source of issues is the granularity of the messages. Of course any solution sending changes
-incrementally will have the same issue.
+One source of issues is the granularity of the messages. (This is not only related to queues,
+but any solution that sends the changes incrementally will have the same issue.)
 
 One business action, such as creating a new customer, may cause creation of
 multiple conceptual level entities, and even more database entities. If
