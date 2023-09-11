@@ -1,9 +1,7 @@
 ---
 layout: post
 title:  Communication Patterns In Data Integrations
-description: Data integrity is especially important in data integrations, whether you use batch or stream processing to deliver data.
-There are multiple communication patterns available, and only some of them are useful for real-time integrations. All of them
-have some caveats regarding data integrity.
+description: Data integrity is especially important in data integrations, whether you use batch or stream processing to deliver data. There are multiple communication patterns available, and only some of them are useful for real-time integrations. All of them have some caveats regarding data integrity.
 date:   2023-09-11 11:05:00 +0300
 image:  '/images/queue.png'
 seotags:   [data, data-integration, data-integrity, communication-patterns]
