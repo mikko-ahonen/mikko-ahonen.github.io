@@ -8,7 +8,7 @@ seotags:   [data, data-integration, data-integrity, communication-patterns]
 tags:   [data integration]
 ---
 
-This post is eigth part in a series about building and adopting a modern
+This post is ninth part in a series about building and adopting a modern
 streaming data integration platform. In this post I will discuss three important aspects of robust data integrations
 when using queues: global ordering of messages, multi-message transactionality, and exactly-once semantics. Focus is
 on Apache Kafka, which is a common platform for implementing streaming data integrations.
@@ -62,3 +62,8 @@ The first alternative is IBM MQ, which seems popular in industries which have
 high data integrity requirements.
 
 The second alternative is to built your own solution based on database features.
+
+***
+
+If you need consulting related to system architectures in general, or data integrations in
+particular, please do not hesitate to contact Mikko Ahonen through the contact page.
