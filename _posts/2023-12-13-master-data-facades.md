@@ -8,8 +8,8 @@ seotags:   [data, data-integration, architecture]
 tags:   [architecture]
 ---
 This post is tenth part in a series about building and adopting a modern
-streaming data integration platform. In this post I will discuss how to release data locked in legacy systems, such 
-as mainframes. 
+streaming data integration platform. In this post I will discuss how to release master data locked in 
+legacy systems, such as mainframes. 
 
 Previous parts:
 * [Part 1: Why to Build a Data Integration Platform?](https://jauzo.com/2023/08/11/why-dip/)
@@ -24,15 +24,20 @@ Previous parts:
 
 ***
 
-When modernizing the architectures, some issues tend to repeat. One of such issues is how to provide access to legacy systems, such 
-as mainframes. Legacy systems are typically being phased out, and it is difficult to justify building new, complex integrations 
-to those systems. But we still mechanisms to access the data and the logic in them, while those systems are still running.
+When modernizing the architectures, some issues tend to repeat. One of such
+issues is how to provide access to legacy systems, such as mainframes, that
+hold important master data. Legacy systems are typically being phased out, and
+it is difficult to justify building new, complex integrations to those systems.
+But we still mechanisms to access the data and the logic in them, while those
+systems are still running.
 
-One common way is to create a façade in front of the legacy system, emulating the APIs of the modern system. The API calls
-in the façade are implemented by using calls to the legacy system. Then you gradually replace the calls to the modern
-implementation. The modern implementation should have the same API as the façade, so you need to put effort in the design
-of the API. When all the API calls have been implemented by the modern system, the
-façade is no longer needed.  This is called the strangler fig pattern, a name popularized by 
+One common way is to create a façade in front of the legacy system, emulating
+the APIs of the modern system. The API calls in the façade are implemented by
+using calls to the legacy system. Then you gradually replace the calls to the
+modern implementation. The modern implementation should have the same API as
+the façade, so you need to put effort in the design of the API. When all the
+API calls have been implemented by the modern system, the façade is no longer
+needed.  This is called the strangler fig pattern, a name popularized by
 [Martin Fowler](https://martinfowler.com/bliki/StranglerFigApplication.html).
 
 ![Original strangler fig pattern](/images/strangler-fig.png)
