@@ -11,7 +11,6 @@ This post is tenth part in a series about building and adopting a modern
 streaming data integration platform. In this post I will discuss how to release master data locked in 
 legacy systems, such as mainframes. 
 
-Previous parts:
 * [Part 1: Why to Build a Data Integration Platform?](https://jauzo.com/2023/08/11/why-dip/)
 * [Part 2: About Logging](https://jauzo.com/2023/08/25/logging/)
 * [Part 3: Data Integration Methods](https://jauzo.com/2023/08/28/data-integration-methods/)
