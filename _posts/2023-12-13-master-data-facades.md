@@ -34,29 +34,33 @@ systems are still running.
 One common way is to create a façade in front of the legacy system, emulating
 the APIs of the modern system. The API calls in the façade are implemented by
 using calls to the legacy system. Then you gradually replace the calls to the
-modern implementation. The modern implementation should have the same API as
+modern implementation.
+
+The modern implementation should have the same API as
 the façade, so you need to put effort in the design of the API. When all the
 API calls have been implemented by the modern system, the façade is no longer
-needed.  This is called the strangler fig pattern, a name popularized by
+needed.  This is called the Strangler Fig pattern, a name popularized by
 [Martin Fowler](https://martinfowler.com/bliki/StranglerFigApplication.html).
 
-![Original strangler fig pattern](/images/strangler-fig.png)
+![Original Strangler Fig pattern](/images/strangler-fig.png)
 
 When the façade is used to stream data, we need a little bit more complex
 pattern.  Often mainframe systems cannot stream changes, so the intermediate
 system often needs to pull database dump from the legacy system, compare the
 result to the previous data dump, and then create a series of changes based on
-the differences. As the intermediate system is more complex, façade is not
+the differences.
+
+As the intermediate system is more complex, a façade is not
 really an adequate name for it. Here we call it a "temporary modern system",
 because it often contains some of the functionality of the modern system, but
 might be replaced by a more permanent modern system later.
 
-![Streaming strangler fig pattern](/images/streaming-strangler-fig.png)
+![Streaming Strangler Fig pattern](/images/streaming-strangler-fig.png)
 
-In the original strangler fig pattern, the programming languages choice is not
+In the original Strangler Fig pattern, the programming languages choice is not
 very important. Basically you need to carry out the API calls and translate
 data into more modern format, often JSON. Most modern programming languages
-support this. However, in the streaming version of the strangler fig pattern,
+support this. However, in the streaming version of the Strangler Fig pattern,
 you need more complex data manipulation, as well as way to store the data. It is 
 also beneficial if you can easily build user interfaces for manipulating some
 data entities.
@@ -66,7 +70,7 @@ These platforms promise to make software development more productive.
 This is often understood to mean that the software development will be
 cheaper. This would decrease the pressure on tight IT budgets.  Some platforms
 even claim to empower "citizen developers". Are these platforms well suited
-for building systems for streaming data strangler?
+for building systems for streaming data Strangler?
 
 The underlying idea of low coding is not new. During 80s and 90s, there was a
 similar development, under the name Fourth Generation Languages (4GL). 4GL
@@ -90,7 +94,7 @@ promises of order-of-magnitude improvements in software development productivity
 As the saying goes, there is "No Silver Bullet" [^2]. The lesson from 4GL
 languages is that there is a hidden cost related to the promised productivity.
 
-In trivial exmaples, the low coding platforms may show promising productivity
+In trivial exmples, the low coding platforms may show promising productivity
 improvements. But once you implement non-trivial applications, such as in our
 use case, you start to encounter the limitations of the platform. To bypass the
 limitations, you need to develop complex work-arounds that will offset any cost savings
@@ -119,7 +123,7 @@ provide extensibility in a way that low coding platforms cannot do.
 
 The most popular web frameworks are Django and Ruby on Rails. Rails is
 currently more popular for building websites, but Django has few clear benefits
-for our streaming strangler fig pattern use case.
+for our Streaming Strangler Fig pattern use case.
 
 Django is based on the Python, while Rails uses Ruby. Python has very high
 market share in data manipulation tasks in general, and data science in
@@ -131,7 +135,7 @@ for building REST APIs, and build-in admin UI for basic data manipulation
 tasks.
 
 Django hits the sweet spot for building the intermediate temporary system
-needed in our streaming strangler fig pattern.
+needed in our Streaming Strangler Fig pattern.
 
 ***
 
