@@ -8,7 +8,7 @@ seotags:   [data, data-integration, architecture]
 tags:   [architecture]
 ---
 This post is tenth part in a series about building and adopting a modern
-streaming data integration platform. In this post I will discuss how to release master data locked in 
+streaming data integration platform. In this post I will discuss how to release the master data locked in 
 legacy systems, such as mainframes. 
 
 * [Part 1: Why to Build a Data Integration Platform?](https://jauzo.com/2023/08/11/why-dip/)
