@@ -62,7 +62,7 @@ very important. You can also use an integration platform for this purpose. Basic
 you need to carry out the API calls to the legacy system, and translate
 data into more modern format, often JSON. Most modern programming languages
 support this. However, in the streaming version of the Strangler Fig pattern,
-you need more complex data manipulation, as well as way to store the data. It is 
+you need more complex data manipulation, as well as a way to store the data. It is 
 also beneficial if you can easily build user interfaces for manipulating some
 data entities.
 
