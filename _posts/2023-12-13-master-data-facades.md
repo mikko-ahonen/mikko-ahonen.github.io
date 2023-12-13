@@ -128,7 +128,7 @@ for our Streaming Strangler Fig pattern use case.
 
 Django is based on the Python, while Rails uses Ruby. Python has very high
 market share in data manipulation tasks in general, and data science in
-particular in enterprises. Python is the most popular programming language
+particular, especially in enterprises. Python is the most popular programming language
 according to TIOBE [^3], while Ruby is 19th.
 
 Django also has very good database schema migration framework, simple mechanism
