@@ -70,7 +70,7 @@ These platforms promise to make software development more productive.
 This is often understood to mean that the software development will be
 cheaper. This would decrease the pressure on tight IT budgets.  Some platforms
 even claim to empower "citizen developers". Are these platforms well suited
-for building systems for streaming data Strangler?
+for building systems for Streaming Strangler?
 
 The underlying idea of low coding is not new. During 80s and 90s, there was a
 similar development, under the name Fourth Generation Languages (4GL). 4GL
@@ -101,9 +101,9 @@ limitations, you need to develop complex work-arounds that will offset any cost 
 from the initial development phase, and cause lots of developer frustration.
 Low coding platforms may also have much higher licensing costs. 
 
-Often 80% of the TCO of systems is the maintenance. Perhaps even
-larger contributor to the cost is knowing what to develop. The latter cost is
-often not fully included in the TCO, because some of it happens outside the 
+Often up to 80% of the TCO of a system comes from the maintenance. Another 
+large contributor to the TCO is knowing what to develop. The latter cost is
+often not fully included in the calculations, because some of it happens outside the 
 software development project. One example is a failed iterations of
 the project. Several methods to reduce the cost and risk related to knowing
 what to do have emerged, such as making wireframes, user interface prototypes,
