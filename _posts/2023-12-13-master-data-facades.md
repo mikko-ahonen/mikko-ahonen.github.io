@@ -57,8 +57,9 @@ might be replaced by a more permanent modern system later.
 
 ![Streaming Strangler Fig pattern](/images/streaming-strangler-fig.png)
 
-In the original Strangler Fig pattern, the programming languages choice is not
-very important. Basically you need to carry out the API calls and translate
+In the original Strangler Fig pattern, the programming language choice is not
+very important. You can also use integration platform for this purpose. Basically, 
+you need to carry out the API calls to the legacy system, and translate
 data into more modern format, often JSON. Most modern programming languages
 support this. However, in the streaming version of the Strangler Fig pattern,
 you need more complex data manipulation, as well as way to store the data. It is 
