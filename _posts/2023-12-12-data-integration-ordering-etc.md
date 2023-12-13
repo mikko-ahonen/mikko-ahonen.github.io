@@ -21,6 +21,7 @@ on Apache Kafka, which is a common platform for implementing streaming data inte
 * [Part 7: Lost Integrity On Data Integrity](https://jauzo.com/2023/09/09/data-integrity/)
 * [Part 8: Communication Patterns in Data Integrations](https://jauzo.com/2023/09/11/data-integration-communication-patterns/)
 * [Part 9: Ordering, Transactions and Exactly-Once Semantics in Data Integrations](https://jauzo.com/2023/12/12/data-integration-ordering-etc/)
+* [Part 10: Master Data and Façades](https://jauzo.com/2023/12/13/master-data-and-facades/)
 
 ***
 
