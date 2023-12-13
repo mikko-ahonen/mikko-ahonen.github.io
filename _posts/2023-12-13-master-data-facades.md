@@ -105,7 +105,7 @@ Low coding platforms may also have much higher licensing costs.
 Often up to 80% of the TCO of a system comes from the maintenance. Another 
 large contributor to the TCO is knowing what to develop. The latter cost is
 often not fully included in the calculations, because some of it happens outside the 
-software development project. One example is a failed iterations of
+software development project. One example are the failed iterations of
 the project. Several methods to reduce the cost and risk related to knowing
 what to do have emerged, such as making wireframes, user interface prototypes,
 incremental development methods, requirement specifications etc.
@@ -123,11 +123,11 @@ languages expose the underlying general programming language and
 provide extensibility in a way that low coding platforms cannot do.
 
 The most popular web frameworks are Django and Ruby on Rails. Rails is
-currently more popular for building websites, but Django has few clear benefits
+currently more popular for building websites, but Django has a few clear benefits
 for our Streaming Strangler Fig pattern use case.
 
-Django is based on the Python, while Rails uses Ruby. Python has very high
-market share in data manipulation tasks in general, and data science in
+Django uses the Python programming language, while Rails uses Ruby. Python has very high
+market share in data manipulation tasks in general, and data sciences in
 particular, especially in enterprises. Python is the most popular programming language
 according to TIOBE [^3], while Ruby is 19th.
 
