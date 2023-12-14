@@ -28,7 +28,7 @@ development and maintenance costs in various parts of the architecture.
 ***
 
 As a rule of thumb, maintenance may take up to 80% of the total cost of
-applications during its life cycle. In practice, the actual percentage
+applications during its life cycle [^1]. In practice, the actual percentage
 depends heavily on many things, especially on the life cycle of the system.
 
 Customer-facing web and mobile applications might even need a rewrite every five
