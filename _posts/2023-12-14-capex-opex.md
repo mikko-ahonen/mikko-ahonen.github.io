@@ -34,7 +34,7 @@ depends heavily on many things, especially on the life cycle of the system.
 Customer-facing web and mobile applications might even need a rewrite every five
 years, just due to the technological progress. There are web frameworks *du
 jour*, and if you are using outdated technology, it is difficult to attract and keep
-talent, sometimes even consultants. It may be important that customer-facing applications
+talent, sometimes even consultants. It may also be important that customer-facing applications
 have a modern feel. Core business systems on the other hand have much
 longer life cycle. In some industries thirty years is a typical life span for
 a core business system. Data may need to be stored for even longer, even 100 years.
