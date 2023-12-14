@@ -72,8 +72,7 @@ high quality and well-productized.
 
 ***
 
-[^1]: <sub>Jeff Hanby at [Lookfar blog](http://blog.lookfar.com/blog/2016/10/21/software-maintenance-understanding-and-estimating-costs/) 
-has collected some estimates about the maintenance costs from research.
+[^1]: <sub>Jeff Hanby at [Lookfar blog](http://blog.lookfar.com/blog/2016/10/21/software-maintenance-understanding-and-estimating-costs/) has collected some estimates about the maintenance costs from research.
   \
   Daniel D. Galorath — 75%
   \
