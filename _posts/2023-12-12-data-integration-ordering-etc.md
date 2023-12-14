@@ -12,16 +12,19 @@ streaming data integration platform. In this post I will discuss three important
 when using the logging metaphor: global ordering of messages, multi-message transactionality, and exactly-once semantics. Focus is
 on Apache Kafka, which is a common platform for implementing streaming data integrations.
  
+<!-- dip links start -->
 * [Part 1: Why to Build a Data Integration Platform?](https://jauzo.com/2023/08/11/why-dip/)
 * [Part 2: About Logging](https://jauzo.com/2023/08/25/logging/)
 * [Part 3: Data Integration Methods](https://jauzo.com/2023/08/28/data-integration-methods/)
 * [Part 4: Role of Data Modeling in Data Integrations](https://jauzo.com/2023/08/29/data-modeling/)
 * [Part 5: Data Integration Architectures](https://jauzo.com/2023/09/08/data-integration-architectures/)
 * [Part 6: Lightweight Reference Data](https://jauzo.com/2023/09/09/lightweight-reference-data/)
-* [Part 7: Lost Integrity On Data Integrity](https://jauzo.com/2023/09/09/data-integrity/)
+* [Part 7: Lost Integrity On Data Integrity](https://jauzo.com/2023/09/10/data-integrity/)
 * [Part 8: Communication Patterns in Data Integrations](https://jauzo.com/2023/09/11/data-integration-communication-patterns/)
 * [Part 9: Ordering, Transactions and Exactly-Once Semantics in Data Integrations](https://jauzo.com/2023/12/12/data-integration-ordering-etc/)
 * [Part 10: Master Data and Façades](https://jauzo.com/2023/12/13/master-data-and-facades/)
+* [Part 11: Optimizing Development vs. Maintenance Costs](https://jauzo.com/2023/12/13/capex-opex/)
+<!-- dip links end -->
 
 ***
 
