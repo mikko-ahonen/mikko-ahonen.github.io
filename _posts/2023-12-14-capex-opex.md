@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Optimizing Development vs. Maintenance Costs
-description: 'Maintenance may take up to 80% of the total cost (TCO) of applications during their life cycle. In practice, the actual percentage depends heavily on many things, especially on the life cycle of the system. It may be useful to optimize the development costs for some systems, and maintenance for others.'
+description: 'Maintenance may take up to 80% of the total cost of applications during its life cycle. In practice, the actual percentage depends heavily on many things, especially on the life cycle of the system. It may be useful to optimize the development costs for some systems, and maintenance for others.'
 date:   2023-12-13 09:18:00 +0300
 image:  '/images/house.png'
 seotags:   [data, data-integration, architecture]
@@ -28,7 +28,7 @@ development and maintenance costs in various parts of the architecture.
 ***
 
 As a rule of thumb, maintenance may take up to 80% of the total cost of
-applications during their life cycle. In practice, the actual percentage
+applications during its life cycle. In practice, the actual percentage
 depends heavily on many things, especially on the life cycle of the system.
 
 Customer-facing web and mobile applications might even need a rewrite every five
