@@ -73,23 +73,28 @@ high quality and well-productized.
 ***
 
 [^1]: <sub>Jeff Hanby at [Lookfar blog](http://blog.lookfar.com/blog/2016/10/21/software-maintenance-understanding-and-estimating-costs/) 
-has collected some estimates about the maintenance costs from research.</sub>
-  * <sub>Daniel D. Galorath — 75%
+has collected some estimates about the maintenance costs from research.
   \
-  [http://nyspin.org/Dan%20Galorath%20-%20Development%20is%20only%20Job%201.pdf](http://nyspin.org/Dan%20Galorath%20-%20Development%20is%20only%20Job%201.pdf)</sub>
-  * <sub>Stephen R. Schach — 67%
+  Daniel D. Galorath — 75%
+  \
+  [http://nyspin.org/Dan%20Galorath%20-%20Development%20is%20only%20Job%201.pdf](http://nyspin.org/Dan%20Galorath%20-%20Development%20is%20only%20Job%201.pdf)
+  \  
+  Stephen R. Schach — 67%
   \
   [http://courses.cs.vt.edu/csonline/SE/Lessons/LifeCycle/Lesson.html#refs](http://courses.cs.vt.edu/csonline/SE/Lessons/LifeCycle/Lesson.html#refs)</sub>
-  * <sub>Thomas M. Pigoski — >80%
+  \
+  Thomas M. Pigoski — &gt;80%
   \
   [https://en.wikipedia.org/wiki/Software_maintenance#cite_note-2](https://en.wikipedia.org/wiki/Software_maintenance#cite_note-2)</sub>
-  * <sub>Robert L. Glass — 40% — 80%
   \
-  [https://pdfs.semanticscholar.org/7eee/629b22cd3db63296cac13a0c37cb0a7235f6.pdf](https://pdfs.semanticscholar.org/7eee/629b22cd3db63296cac13a0c37cb0a7235f6.pdf)</sub>
-  * <sub>Jussi Koskinen — >90%
+  Robert L. Glass — 40% — 80%
+  \
+  [https://pdfs.semanticscholar.org/7eee/629b22cd3db63296cac13a0c37cb0a7235f6.pdf](https://pdfs.semanticscholar.org/7eee/629b22cd3db63296cac13a0c37cb0a7235f6.pdf)
+  \
+  Jussi Koskinen — &gt;90%
   \
   [https://wiki.uef.fi/download/attachments/38669960/SMCOSTS.pdf?version=2&modificationDate=1430404596000&api=v2](https://wiki.uef.fi/download/attachments/38669960/SMCOSTS.pdf?version=2&modificationDate=1430404596000&api=v2)</sub>
-</sub>
+  </sub>
 
 ***
 
