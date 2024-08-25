@@ -2,7 +2,7 @@
 layout: post
 title:  Adding a unique constraint to a Django model
 description: 'Adding a unique constraint to a Django model with lots of data when using Postgres'
-date:   2024-08-15 03:20:00 +0300
+date:   2024-08-25 03:20:00 +0300
 image:  '/images/clones.jpeg'
 seotags:   [django,postgres]
 tags:   [django,postgres]
