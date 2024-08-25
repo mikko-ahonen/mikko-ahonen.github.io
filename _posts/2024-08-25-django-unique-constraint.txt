@@ -1,23 +1,23 @@
 ---
 layout: post
-title:  Adding an unique constraint to existing model in Django
+title:  Adding a unique constraint to a Django model
 description: 'Adding a unique constraint to a Django model with lots of data when using Postgres'
 date:   2024-08-15 03:20:00 +0300
 image:  '/images/clones.jpeg'
 seotags:   [django,postgres]
 tags:   [django,postgres]
 ---
-How to add a new unique constraint to a Django model (with Postgres), when there are millions of rows, without server downtime?
+How to add a new unique constraint to a Django model (using Postgres), when there are millions of rows, without server downtime?
 ---
 Recently, a moderately high volume Django site started to fail on MultipleObjectsReturned. The offending model was 
-an advertisement impression counter. There is one row in the database for each each (ad, day) combination.
+an advertisement impression counter. For each ad, day combination there is a row in the database.
 
-The counters were created dynamically using get_or_create(). This method does not guarantee uniqueness, unless the 
-model has unique constraint filtering fields. Fortunately, the related table did not have too many rows.
+The counters are created dynamically using get_or_create(). This method does not guarantee uniqueness, unless the 
+model has unique constraint for the fields used in filtering. Fortunately, the related table did not have too 
+many rows.
 
-While investigating this, I learned how to approach this in case the table would have millions of rows and needed
-to keep the system online throughout the process. I have not tested it because I did not need it, but write it here
-for reference in case it helps somebody else or I need it later.
+While investigating this, I learned what to do if the table has millions of rows. I have not tested 
+the code below, because I did not need it. It is here for reference only.
 
 ### 1. Temporary fix
 
@@ -26,7 +26,8 @@ replacing get_or_create() with filter() and first() was enough to make the syste
 
 ### 2. Fix the data
 
-Do whatever you can to delete the duplicates. In my case, I counted the totals for the counters.
+Do whatever you can to delete the duplicates. In my case, I counted the totals for the counters. Note that 
+the code below is not transactional, and may lose some counts.
 
 ```python
 from django.db import migrations
