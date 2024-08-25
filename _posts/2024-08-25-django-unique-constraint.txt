@@ -7,6 +7,8 @@ image:  '/images/clones.jpeg'
 seotags:   [django,postgres]
 tags:   [django,postgres]
 ---
+How to add a new unique constraint to a Django model (with Postgres), when there are millions of rows, without server downtime?
+---
 Recently, a moderately high volume Django site started to fail on MultipleObjectsReturned. The offending model was 
 an advertisement impression counter. There is one row in the database for each each (ad, day) combination.
 
