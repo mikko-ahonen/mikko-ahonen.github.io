@@ -10,24 +10,24 @@ tags:   [django,postgres]
 Recently, a moderately high volume Django site started to fail on MultipleObjectsReturned. The offending model was 
 an advertisement impression counter.
 
-The counters are created dynamically using get_or_create(). This method does not guarantee uniqueness unless the 
-model has unique constraint for the fields used in the filtering.
+The counters were created dynamically using get_or_create(). It was failing, because the method may create
+duplicates unless the model has unique constraints for the fields used in the filtering, which I did not have.
 
-Fortunately, the corresponding table did not have too rows so I could just fix the data and add the constraint.
+Fortunately, I did not have too many rows in the table, so I could just fix the data and then
+add the constraint to the model.
 
-While investigating this, I learned what to do if the table has millions of rows. I will leave it here for future
-reference. Use only for ideas, I have not tested it.
+While investigating this, I figured out how to do it if there are millions of rows and I need to run
+the update online. I will leave it here for future reference. Use it only for ideas, I have not tested it.
 
 ### 1. Temporary fix
 
-My production was failing, so I needed to have a quick, temporary fix. Replacing get_or_create() with 
+My production was failing, so I needed to have a quick temporary fix. Replacing get_or_create() with 
 filter() and first() was enough to make the system work while I was fixing it.
 
 ### 2. Fix the data
 
-Do whatever you can to delete the duplicates. In my case, I counted the totals for the counters. Note that 
-the code below is not transactional, and may lose some counts. If that is a problem, identify only the 
-offending counters and update them inside a transaction.
+I merged the counters by adding their values together. The code below is not transactional, and may lose some counts. 
+If that is a problem, identify the offending counters and update each one inside a transaction.
 
 ```python
 from django.db import migrations
@@ -74,12 +74,11 @@ class ImpressionCounter(models.Model):
 % python manage.py makemigrations
 ```
 
-This will create a migration for an index. If you have lots of data, this would lock the table for a long
-time. Luckily Django has a new CreateIndexConcurrently feature which we can use.
+This will create a migration for the index. If you have lots of data, this would lock the table for a long
+time. Luckily, since 3.0, Django has had a new AddIndexConcurrently feature which can be used.
 
 To use it, open the generated migration file and change the AddIndex to AddIndexConcurrently and
-RemoveIndex to RemoveIndexConcurrently. AddIndexConcurrently and RemoveIndexConcurrently were introduced in 
-in Django 3.0.
+RemoveIndex to RemoveIndexConcurrently.
 
 Give a name to the index, so you can reference it when creating the constraint.
 
