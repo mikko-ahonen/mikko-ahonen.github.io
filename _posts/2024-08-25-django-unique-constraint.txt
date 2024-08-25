@@ -8,7 +8,7 @@ seotags:   [django,postgres]
 tags:   [django,postgres]
 ---
 Recently, a moderately high volume Django site started to fail on MultipleObjectsReturned. The offending model was 
-an advertisement impression counter. For each ad, day combination there is a row in the database.
+an advertisement impression counter. For each ad and day combination there was a row in the database.
 
 The counters are created dynamically using get_or_create(). This method does not guarantee uniqueness, unless the 
 model has unique constraint for the fields used in filtering. Fortunately, the related table did not have too 
@@ -16,44 +16,6 @@ many rows.
 
 While investigating this, I learned what to do if the table has millions of rows. I have not tested 
 the code below, because I did not need it. It is here for reference only.
-
-### 1. Temporary fix
-
-If the production is failing, you may need to have a quick, temporary fix. In my case, 
-replacing get_or_create() with filter() and first() was enough to make the system work for the current day.
-
-### 2. Fix the data
-
-Do whatever you can to delete the duplicates. In my case, I counted the totals for the counters. Note that 
-the code below is not transactional, and may lose some counts.
-
-```python
-from django.db import migrations
-
-def remove_duplicate_entries(apps, schema_editor):
-    ImpressionCounter = apps.get_model('ads', 'ImpressionCounter')
-    seen = dict()
-    for counter in ImpressionCounter.objects.all():
-        identifier = (counter.ad_id, counter.impression_date)
-        if identifier in seen:
-            seen[identifier].counter += counter.counter
-            seen[identifier].save()
-            counter.delete()
-        else:
-            seen[identifier] = counter
-
-class Migration(migrations.Migration):
-
-    dependencies = [
-        ('ads', '0011_alter_click_index_together'),
-    ]
-
-    operations = [
-        migrations.RunPython(remove_duplicate_entries, migrations.RunPython.noop),
-    ]
-```
-
-### 3. Add an index to the model
 
 ***
 
