@@ -18,8 +18,6 @@ While investigating this, I learned how to approach this in case the table would
 to keep the system online throughout the process. I have not tested it because I did not need it, but write it here
 for reference in case it helps somebody else or I need it later.
 
-https://medium.com/@timmerop/how-to-add-a-uniqueconstraint-concurrently-in-django-2043c4752ee6
-
 1. Temporary fix
 
 If the production is failing, you may need to have a quick, temporary fix. In my case, 
@@ -152,6 +150,10 @@ class Migration(migrations.Migration):
             ]
     ]
 ```
+
+Sources
+
+<a href="https://medium.com/@timmerop/how-to-add-a-uniqueconstraint-concurrently-in-django-2043c4752ee6">How to add unique constraint concurrently in Django</a>
 
 ***
 
