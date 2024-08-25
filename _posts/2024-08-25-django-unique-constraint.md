@@ -10,11 +10,12 @@ tags:   [django,postgres]
 Recently, a moderately high volume Django site started to fail on MultipleObjectsReturned. The offending model was 
 an advertisement impression counter.
 
-The counters were created dynamically using get_or_create(). It was failing, because the method may create
-duplicates unless the model has unique constraints for the fields used in the filtering, which I did not have.
+The counters were created dynamically using get_or_create(). It was failing, because get_or_create() may
+create duplicates if the model does not have a unique constraints for the fields used in the filtering. And 
+I did not have such a contraint.
 
-Fortunately, I did not have too many rows in the table, so I could just fix the data and then
-add the constraint to the model.
+Fortunately, I did not have too many rows in the table, so I could just fix the data, add the constraint to the model
+generate migrations and run them.
 
 While investigating this, I figured out how to do it if there are millions of rows and I need to run
 the update online. I will leave it here for future reference. Use it only for ideas, I have not tested it.
@@ -26,8 +27,8 @@ filter() and first() was enough to make the system work while I was fixing it.
 
 ### 2. Fix the data
 
-I merged the counters by adding their values together. The code below is not transactional, and may lose some counts. 
-If that is a problem, identify the offending counters and update each one inside a transaction.
+I fixed the data by merging the counters, by adding their values together. The code below is not transactional, 
+and may lose some counts. For me that was not a big deal.
 
 ```python
 from django.db import migrations
@@ -74,8 +75,9 @@ class ImpressionCounter(models.Model):
 % python manage.py makemigrations
 ```
 
-This will create a migration for the index. If you have lots of data, this would lock the table for a long
-time. Luckily, since 3.0, Django has had a new AddIndexConcurrently feature which can be used.
+This will create a migration for the index. If you have lots of data, this default migration locks the 
+Postgres table for the duration of the index creation. Luckily, Postgres has a CREATE INDEX CONCURRENTLY 
+feature. Django has support for it in migrations since 3.0.
 
 To use it, open the generated migration file and change the AddIndex to AddIndexConcurrently and
 RemoveIndex to RemoveIndexConcurrently.
@@ -151,6 +153,8 @@ class Migration(migrations.Migration):
 ### Sources
 
 <a href="https://medium.com/@timmerop/how-to-add-a-uniqueconstraint-concurrently-in-django-2043c4752ee6">How to add unique constraint concurrently in Django</a>
+
+<a href="https://www.postgresql.org/docs/current/sql-createindex.html#SQL-CREATEINDEX-CONCURRENTLY">SQL Create Index - Building Indexes Concurrently</a>
 
 ***
 
