@@ -5,10 +5,10 @@
 .highlight {
   border-radius: 4px;
   color: $white;
-  background: $blue-dark;
+  background: $black;
 
   .highlighter-rouge & {
-    background: #eef;
+    //background: #eef;
   }
 
   .c     { color: #998; font-style: italic } // Comment

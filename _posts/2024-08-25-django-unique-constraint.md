@@ -8,24 +8,26 @@ seotags:   [django,postgres]
 tags:   [django,postgres]
 ---
 Recently, a moderately high volume Django site started to fail on MultipleObjectsReturned. The offending model was 
-an advertisement impression counter. For each ad, day combination there is a row in the database.
+an advertisement impression counter.
 
-The counters are created dynamically using get_or_create(). This method does not guarantee uniqueness, unless the 
-model has unique constraint for the fields used in filtering. Fortunately, the related table did not have too 
-many rows.
+The counters are created dynamically using get_or_create(). This method does not guarantee uniqueness unless the 
+model has unique constraint for the fields used in the filtering.
 
-While investigating this, I learned what to do if the table has millions of rows. I have not tested 
-the code below, because I did not need it. It is here for reference only.
+Fortunately, the corresponding table did not have too rows so I could just fix the data and add the constraint.
+
+While investigating this, I learned what to do if the table has millions of rows. I will leave it here for future
+reference. Use only for ideas, I have not tested it.
 
 ### 1. Temporary fix
 
-If the production is failing, you may need to have a quick, temporary fix. In my case, 
-replacing get_or_create() with filter() and first() was enough to make the system work for the current day.
+My production was failing, so I needed to have a quick, temporary fix. Replacing get_or_create() with 
+filter() and first() was enough to make the system work while I was fixing it.
 
 ### 2. Fix the data
 
 Do whatever you can to delete the duplicates. In my case, I counted the totals for the counters. Note that 
-the code below is not transactional, and may lose some counts.
+the code below is not transactional, and may lose some counts. If that is a problem, identify only the 
+offending counters and update them inside a transaction.
 
 ```python
 from django.db import migrations
@@ -81,10 +83,6 @@ in Django 3.0.
 
 Give a name to the index, so you can reference it when creating the constraint.
 
-```bash
-% python manage.py sqlmigrate ads 0013
-```
-
 ### 5. Add the constraint to the model
 
 Django has two ways to make field combinations unique: the older unique_together and the newer constraints. The former
@@ -112,7 +110,7 @@ default.
 
 Edit the migration to use the existing constraint.
 
-Start off by the SQL commands for the migration and reverse migration:
+Start off by printing the SQL commands for the migration and reverse migration:
 
 ```bash
 % python manage.py sqlmigrate ads 0014
@@ -137,7 +135,7 @@ class Migration(migrations.Migration):
               migrations.RunSQL(
                 sql=
                 """
-                    ALTER TABLE "ads_impressioncounter" ADD CONSTRAINT "unique_ad_impression_date" UNIQUE ("ad_id", "impression_date") USING INDEX (ads_impressioncounter_idx);
+                    ALTER TABLE "ads_impressioncounter" ADD CONSTRAINT "unique_ad_impression_date" UNIQUE ("ad_id", "impression_date") USING INDEX (index_impression_counter);
                 """,
                 reverse_sql="""
                     ALTER TABLE "ads_impressioncounter" DROP CONSTRAINT "unique_ad_impression_date";
