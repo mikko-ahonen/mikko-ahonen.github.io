@@ -7,7 +7,6 @@ image:  '/images/clones.jpeg'
 seotags:   [django,postgres]
 tags:   [django,postgres]
 ---
-
 Recently, a moderately high volume Django site started to fail on MultipleObjectsReturned. The offending model was 
 an advertisement impression counter. There is one row in the database for each each (ad, day) combination.
 
@@ -18,12 +17,12 @@ While investigating this, I learned how to approach this in case the table would
 to keep the system online throughout the process. I have not tested it because I did not need it, but write it here
 for reference in case it helps somebody else or I need it later.
 
-1. Temporary fix
+### 1. Temporary fix
 
 If the production is failing, you may need to have a quick, temporary fix. In my case, 
 replacing get_or_create() with filter() and first() was enough to make the system work for the current day.
 
-2. Fix the data
+### 2. Fix the data
 
 Do whatever you can to delete the duplicates. In my case, I counted the totals for the counters.
 
@@ -53,7 +52,7 @@ class Migration(migrations.Migration):
     ]
 ```
 
-3. Add an index to the model
+### 3. Add an index to the model
 
 ```python
 class ImpressionCounter(models.Model):
@@ -66,7 +65,7 @@ class ImpressionCounter(models.Model):
         ]
 ```
 
-4. Create the migration for the index
+### 4. Create the migration for the index
 
 ```bash
 % python manage.py makemigrations
@@ -85,7 +84,7 @@ Give a name to the index, so you can reference it when creating the constraint.
 % python manage.py sqlmigrate ads 0013
 ```
 
-5. Add the constraint to the model
+### 5. Add the constraint to the model
 
 Django has two ways to make field combinations unique: the older unique_together and the newer constraints. The former
 may be deprecated in the future, so it makes sense to use the latter.
@@ -101,7 +100,7 @@ class ImpressionCounter(models.Model):
         ]
 ```
 
-6. Create the migration for the constraint
+### 6. Create the migration for the constraint
 
 The following command will create the migration for the constraint. It will not use the existing index by 
 default.
@@ -151,7 +150,7 @@ class Migration(migrations.Migration):
     ]
 ```
 
-Sources
+### Sources
 
 <a href="https://medium.com/@timmerop/how-to-add-a-uniqueconstraint-concurrently-in-django-2043c4752ee6">How to add unique constraint concurrently in Django</a>
 
