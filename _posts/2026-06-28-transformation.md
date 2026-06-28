@@ -1,0 +1,79 @@
+---
+layout: post
+title:  Transformations
+description: 'As LLMs are transformers, and that tells us when to use them, and how'
+date:   2024-08-15 03:20:00 +0300
+image:  '/images/clones.jpeg'
+seotags:   [django,postgres]
+tags:   [django,postgres]
+---
+# Transformations
+
+We often talk about LLMs in terms of *reasoning* and *generation*. I have found it more
+helpful to think in terms of transformations and semantic layers. Perhaps this is obvious, but there
+appears to be a general principle that I have not found explicitly expressed elsewhere.
+
+> *The transformations available to a system are bounded by the semantics explicitly represented 
+> in its internal model.*
+
+As an example, a platform for creating training videos. If all you have is the recorded video, 
+automating the postprocessing (such as highlighting an element) is almost impossible. You would need
+to analyze the content to understand what is going on, which is not reliable.
+
+Now suppose the system producing the training videos also knows where the buttons, dialogs and forms are.
+It can automatically zoom to the correct button, highlight a dialog, or keep an entire form visible.
+
+The difference is in semantic representation.
+
+If you add another semantic layer, and instead of UI elements, the system start to understand actions. It 
+knows that clicking a certain button means *Create a Customer*. Now it can generate documentation, narration, 
+interactive walkthroughs and full training videos.
+
+This leads to a simple second principle:
+
+> *Each additional semantic layer enlarges the space of valid, automatable transformations.*
+
+I think this principle shows up in many places in software development cycle. Compilers go through 
+multiple intermediate representations when transforming a C program to executable.
+
+Browsers build DOM as an intermediate representation, instead of rendering the pixels directly.
+
+These intermediate representations make the systems maintainable, but they also
+appear to be fundamental in what transformations are feasible.
+
+We can think of LLMs as semantic transformers that transform from one representation into another.
+
+In software development, requirements are transformer into user stories, user stories are transformed 
+into domain models, domain models are transformed APIs, APIs arre transformed to code, code is transformed to tests.
+
+The quality of each transformation depends on how much of the semantics is explicit.
+
+If a LLM receives a well-defined domain model and an API specification, generating code is mostly 
+a transformation problem. If you prompt the LLM "build me a CRM", it has to invent a domain model, 
+workflows, APIs and architecture before it can write the code. In other words, it is filling the
+gaps.
+
+As LLMs have been trained on lots of code, this sometimes produces working software. But it can also
+contain hallucinations or invent new requirements or features.
+
+> *The reliable use of LLMs maximizes explicit semantic representations and minimizes transformations that 
+> rely solely on implicit semantic knowledge.*
+
+The key word here is *reliable*. LLMs have implicit semantic knowledge encoded in their weights. That's why 
+they can and do invent what is missing. These invented semantics are probabilistic.
+
+Explicit semantics are constraints. The more meaning that is represented in the requirements, 
+the more LLM becomes a reliable transformer instead of a inventor.
+
+So the key to succesful use of LLMs is to have a taste for rich, meaningful semantic representations, and
+how these can interact well.
+
+Learning LISP languages is often said to change your approach to programming in any language. One of these 
+changes is that you start to think in terms of DSLs. Instead of imperatively developing the software, you envision a
+DSL that would be perfect for writing your program. Then you write the program in that language. Finally you
+implement that language.
+
+***
+
+If you need consulting related to system architectures in general, or LLMs or data integrations in
+particular, please do not hesitate to contact Mikko Ahonen through the contact page.
