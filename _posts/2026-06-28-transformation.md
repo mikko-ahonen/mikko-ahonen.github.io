@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Transformations
-description: 'As LLMs are transformers, and that tells us when to use them, and how'
+title:  Transforms
+description: 'Considering LLMs as transformers between different semantic representations helps us to use build more reliable systems based on them'
 date:   2026-06-28 15:20:00 +0300
 image:  '/images/transformers.png'
 seotags:   [django,postgres]
