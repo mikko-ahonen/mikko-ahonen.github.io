@@ -3,7 +3,7 @@ layout: post
 title:  Transformations
 description: 'As LLMs are transformers, and that tells us when to use them, and how'
 date:   2024-08-15 03:20:00 +0300
-image:  '/images/clones.jpeg'
+image:  '/images/transformers.png'
 seotags:   [django,postgres]
 tags:   [django,postgres]
 ---
@@ -11,7 +11,7 @@ tags:   [django,postgres]
 
 We often talk about LLMs in terms of *reasoning* and *generation*. I have found it more
 helpful to think in terms of transformations and semantic layers. Perhaps this is obvious, but there
-appears to be a general principle that I have not found explicitly expressed elsewhere.
+appears to be a general principle that I have not found explicitly expressed elsewhere:
 
 > *The transformations available to a system are bounded by the semantics explicitly represented 
 > in its internal model.*
@@ -25,53 +25,50 @@ It can automatically zoom to the correct button, highlight a dialog, or keep an 
 
 The difference is in semantic representation.
 
-If you add another semantic layer, and instead of UI elements, the system start to understand actions. It 
-knows that clicking a certain button means *Create a Customer*. Now it can generate documentation, narration, 
-interactive walkthroughs and full training videos.
+If you add another semantic layer, and instead of UI elements, the systems is made aware about the actions 
+available, so that it knows that clicking a certain button means *Create a Customer*. Now it becomes
+possible to create user guides,  full training videos etc.
 
 This leads to a simple second principle:
 
 > *Each additional semantic layer enlarges the space of valid, automatable transformations.*
 
 I think this principle shows up in many places in software development cycle. Compilers go through 
-multiple intermediate representations when transforming a C program to executable.
+multiple intermediate representations when transforming a C program to executable. Browsers build DOM 
+as an intermediate representation, instead of rendering the pixels directly.
 
-Browsers build DOM as an intermediate representation, instead of rendering the pixels directly.
-
-These intermediate representations make the systems maintainable, but they also
-appear to be fundamental in what transformations are feasible.
+These intermediate representations are partly done for architectural considerations, to make systems 
+more maintainable. But they also appear to be fundamental in what transformations are feasible.
 
 We can think of LLMs as semantic transformers that transform from one representation into another.
 
-In software development, requirements are transformer into user stories, user stories are transformed 
-into domain models, domain models are transformed APIs, APIs arre transformed to code, code is transformed to tests.
-
-The quality of each transformation depends on how much of the semantics is explicit.
+In software development, requirements are transformed into user stories, user stories are transformed 
+into domain models, domain models are transformed to APIs, APIs arre transformed to code, code is 
+transformed to tests. The quality of each transformation depends on how much of the semantics is explicit.
 
 If a LLM receives a well-defined domain model and an API specification, generating code is mostly 
-a transformation problem. If you prompt the LLM "build me a CRM", it has to invent a domain model, 
+a transformation problem. If you prompt the LLM with "build me a CRM", it has to invent a domain model, 
 workflows, APIs and architecture before it can write the code. In other words, it is filling the
 gaps.
 
 As LLMs have been trained on lots of code, this sometimes produces working software. But it can also
-contain hallucinations or invent new requirements or features.
+hallucinate or invent new requirements or features that were not there.
 
 > *The reliable use of LLMs maximizes explicit semantic representations and minimizes transformations that 
 > rely solely on implicit semantic knowledge.*
 
 The key word here is *reliable*. LLMs have implicit semantic knowledge encoded in their weights. That's why 
-they can and do invent what is missing. These invented semantics are probabilistic.
+they can and do invent what is missing to be able to complete their goal. These invented semantics 
+are probabilistic.
 
 Explicit semantics are constraints. The more meaning that is represented in the requirements, 
-the more LLM becomes a reliable transformer instead of a inventor.
-
-So the key to succesful use of LLMs is to have a taste for rich, meaningful semantic representations, and
-how these can interact well.
+the more LLM becomes a reliable transformer instead of a inventor. It seems that for succesful use of 
+LLMs, you need to have a taste for rich, meaningful semantic representations, and how these can interact well.
 
 Learning LISP languages is often said to change your approach to programming in any language. One of these 
 changes is that you start to think in terms of DSLs. Instead of imperatively developing the software, you envision a
 DSL that would be perfect for writing your program. Then you write the program in that language. Finally you
-implement that language.
+implement that language. That is actually very useful way to approach LLM use.
 
 ***
 
