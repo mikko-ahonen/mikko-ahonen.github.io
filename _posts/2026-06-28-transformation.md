@@ -1,17 +1,17 @@
 ---
 layout: post
-title:  Transforms
+title:  Transformations
 description: 'Considering LLMs as transformers between different semantic representations helps us to use build more reliable systems based on them'
 date:   2026-06-28 15:20:00 +0300
 image:  '/images/transformers.png'
 seotags:   [django,postgres]
 tags:   [django,postgres]
 ---
-# Transformations
+We often talk about LLMs in terms of reasoning and generation. I have found it more helpful to think in terms of transformations and semantic layers. There appears to be some general principles that I have not found explicitly expressed elsewhere, on the relationship between semantic layers and transformations. Understanding them helps us to build more reliable systems with the help of LLMs.
 
-We often talk about LLMs in terms of *reasoning* and *generation*. I have found it more
-helpful to think in terms of transformations and semantic layers. Perhaps this is obvious, but there
-appears to be a general principle that I have not found explicitly expressed elsewhere:
+***
+
+The general principle could be expressed as:
 
 > *The transformations available to a system are bounded by the semantics explicitly represented 
 > in its internal model.*
