@@ -16,8 +16,8 @@ The general principle could be expressed as:
 > *The transformations available to a system are bounded by the semantics explicitly represented 
 > in its internal model.*
 
-As an example, a platform for creating training videos. If all you have is the recorded video, 
-automating the postprocessing (such as highlighting an element) is almost impossible. You would need
+Take as an example, a platform for creating training videos. If all you have is the recorded video, 
+automating the postprocessing (such as highlighting the clicked element) is almost impossible. You would need
 to analyze the content to understand what is going on, which is not reliable.
 
 Now suppose the system producing the training videos also knows where the buttons, dialogs and forms are.
@@ -25,8 +25,8 @@ It can automatically zoom to the correct button, highlight a dialog, or keep an 
 
 The difference is in semantic representation.
 
-If you add another semantic layer, and instead of UI elements, the systems is made aware about the actions 
-available, it knows that clicking a certain button is related to action *Create a Customer*. Now it becomes
+If you add another semantic layer, and instead of UI elements, you make the systems aware about the actions 
+available, for example that clicking a certain button is related to action *Create a Customer*. Now it becomes
 possible to create an user guide, full training videos etc.
 
 This leads to a simple second principle:
@@ -47,7 +47,7 @@ into domain models, domain models are transformed to APIs, APIs arre transformed
 transformed to tests. The quality of each transformation depends on how much of the semantics is explicit.
 
 If a LLM receives a well-defined domain model and an API specification, generating code is mostly 
-a transformation problem. If you prompt the LLM with "build me a CRM", it has to invent a domain model, 
+a direct transformation problem. If you prompt the LLM with "build me a CRM", it has to invent a domain model, 
 workflows, APIs and architecture before it can write the code. In other words, it is filling the
 gaps.
 
