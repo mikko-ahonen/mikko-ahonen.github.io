@@ -26,8 +26,8 @@ It can automatically zoom to the correct button, highlight a dialog, or keep an 
 The difference is in semantic representation.
 
 If you add another semantic layer, and instead of UI elements, the systems is made aware about the actions 
-available, so that it knows that clicking a certain button means *Create a Customer*. Now it becomes
-possible to create user guides,  full training videos etc.
+available, it knows that clicking a certain button is related to action *Create a Customer*. Now it becomes
+possible to create an user guide, full training videos etc.
 
 This leads to a simple second principle:
 
