@@ -2,7 +2,7 @@
 layout: post
 title:  Transformations
 description: 'As LLMs are transformers, and that tells us when to use them, and how'
-date:   2024-08-15 03:20:00 +0300
+date:   2026-06-28 15:20:00 +0300
 image:  '/images/transformers.png'
 seotags:   [django,postgres]
 tags:   [django,postgres]
@@ -62,7 +62,7 @@ they can and do invent what is missing to be able to complete their goal. These 
 are probabilistic.
 
 Explicit semantics are constraints. The more meaning that is represented in the requirements, 
-the more LLM becomes a reliable transformer instead of a inventor. It seems that for succesful use of 
+the more LLM becomes a reliable transformer instead of an inventor. It seems that for succesful use of 
 LLMs, you need to have a taste for rich, meaningful semantic representations, and how these can interact well.
 
 Learning LISP languages is often said to change your approach to programming in any language. One of these 
