@@ -21,7 +21,7 @@ Simplicity is necessary if you want to build reliable systems. Often we confuse 
 such as familiarity with the solution (microservices) or experience in a certain tool (Java). Simplicity 
 does not come automatically, but requires additional effort and focus.
 
-> *Simplicity is prerequisite for reliability.*
+> *Simplicity is prerequisite for reliability.*<br/>
 > -- Edsger W. Dijkstra
 
 Solution is overengineered when intrinsically simple problem has an incidentally complex solution.
@@ -36,8 +36,8 @@ you have complexity^2^, you might no longer be able to refactor the solution. Yo
 be able to seperate the intrinsic complexity from incidental complexity. 
 Even if we rewrite the system, how do we avoid the complexity creeping in?
 
-> *I don't know.*
-> *I don't want to know.*
+> *I don't know.*<br/>
+> *I don't want to know.*<br/>
 > -- Rich Hickey in [Simple Made Easy](https://www.youtube.com/watch?v=SxdOUGdseq4)
 
 We want to created components that encapsulate the complexity. But encapsulation is often based on
