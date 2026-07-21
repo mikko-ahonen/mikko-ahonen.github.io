@@ -38,7 +38,7 @@ Even if we rewrite the system, how do we avoid the complexity creeping in?
 
 > *I don't know.*
 > *I don't want to know.*
-> -- Rich Hickey in [Simple Made Easy](
+> -- Rich Hickey in [Simple Made Easy](https://www.youtube.com/watch?v=SxdOUGdseq4)
 
 We want to created components that encapsulate the complexity. But encapsulation is often based on
 leaky abstractions. Good examples are rare, because you need to understand the problem domain, 
