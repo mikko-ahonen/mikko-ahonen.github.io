@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Do LLMs need leadership or management?
+title:  Working with LLMs: leadership or management?
 description: 'Is working with LLMs more like leadership or management'
 date:   2026-08-15 18:05:00 +0300
 image:  '/images/managing-computer.png'
@@ -16,7 +16,7 @@ is more like &lt;x&gt;".
 
 ***
 
-For me, one of the most important aspects of leadership is having a long-term
+For me, one of the most important aspects of leadership is establishing a long-term
 vision, and being able to communicate it. In other words, it answers the
 question of WHAT.
 
@@ -24,12 +24,11 @@ One of the most important aspects of management is being able to organize
 resources to materialize that vision. In other words, it answers the questions
 of WHO and WHEN.
 
-We still need to answer the question of HOW -- which require the expertise --
-when building software, we are talking about architecture, implementation and 
-subject-matter expertise.
+We still need to answer the question of HOW. When building software, we are talking 
+about architecture, design, implementation and subject-matter expertise.
 
 All of these elements are necessary when doing anything -- even alone -- but become 
-even more important when you need more resources than one person -- be it a team of 
+even more important when you there are more resources than one person -- be it a team of 
 people or a team of LLMs.
 
 ***
