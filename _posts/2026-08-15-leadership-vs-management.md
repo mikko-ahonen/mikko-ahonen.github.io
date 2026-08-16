@@ -10,7 +10,7 @@ tags:   [llm,management,leaderhip]
 
 Is working with LLMs more like [leadership](https://allen.bargi.org/notes/working-with-ai-feels-like-leadership/) or more like [management](https://contraptions.venkateshrao.com/p/prompting-is-managing)?
 
-The words *management* and *leadership* are used to convey many kinds of meaning, 
+The words *management* and *leadership* are used to convey lots of meaning, 
 so it is important to elaborate carefully what we mean when we say that "working with LLMs 
 is more like &lt;x&gt;".
 
@@ -18,7 +18,7 @@ is more like &lt;x&gt;".
 
 For me, one of the most important aspects of leadership is establishing a long-term
 vision, and being able to communicate it. In other words, it answers the
-question of WHAT.
+questions WHAT and WHY.
 
 One of the most important aspects of management is being able to organize
 resources to materialize that vision. In other words, it answers the questions
