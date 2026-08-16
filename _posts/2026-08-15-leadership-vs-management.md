@@ -28,8 +28,8 @@ We still need to answer the question of HOW. When building software, we are talk
 about architecture, design, implementation and subject-matter expertise.
 
 All of these elements are necessary when doing anything -- even alone -- but become 
-even more important when you there are more resources than one person -- be it a team of 
-people or a team of LLMs.
+even more important when you you beyond one person -- be it a team of people,
+team of LLMs, or a hybrid.
 
 ***
 
