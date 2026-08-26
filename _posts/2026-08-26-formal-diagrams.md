@@ -36,7 +36,7 @@ set are shortcuts, that can be represented with the basic elements.
 Sometimes the ambiguity in diagrams is useful. For example, the symbols in maps are not formally defined. 
 For example, on a road map, the line width does not fully correspond with the road width.
 
-It seems BPMN is a good drawing notationflow, but not sufficient for comprehensive formal process 
+It seems BPMN is a good drawing notation for the sequence flow, but not sufficient for comprehensive formal process 
 definitions. As we cannot use simple sequence flows to show how the responsibility flows across 
 organizational boundaries, the responsibilities need to be defined separately. To communicate 
 clearly using BPMN diagrams, it seems a good idea to keep to the basic elements.
