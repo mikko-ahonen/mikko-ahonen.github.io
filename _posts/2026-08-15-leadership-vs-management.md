@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Working with LLMs: leadership or management?
+title: 'Working with LLMs: leadership or management?'
 description: 'Is working with LLMs more like leadership or management'
 date:   2026-08-15 18:05:00 +0300
 image:  '/images/managing-computer.png'
