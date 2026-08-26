@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Should diagrams be formal?
-description: Should diagrams be formal?
+description: 'Should diagrams be formal?'
 date:   2026-08-26 07:06:00 +0300
 image:  '/images/blackboard.png'
 seotags:   [bpmn,usm,modeling,diagrams]
