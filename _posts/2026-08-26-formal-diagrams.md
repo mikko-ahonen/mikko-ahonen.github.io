@@ -41,7 +41,7 @@ definitions. As we cannot use simple sequence flows to show how the responsibili
 organizational boundaries, the responsibilities need to be defined separately. To communicate 
 clearly using BPMN diagrams, it seems a good idea to keep to the basic elements.
 
-**
+***
 
 If you need consulting related to system architectures in general, or LLMs or data integrations in
 particular, please do not hesitate to contact Mikko Ahonen through the contact page.
