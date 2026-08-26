@@ -29,7 +29,7 @@ Organization and resource modeling is not fully in the scope of BPMN. For instan
 standard way to define the Accountable role. It can appear for example in approval/decision 
 steps, linked RACI models, annotations or in vendor-specific extensions.
 
-The core BPMN notation has 116 element types, and research has found at least 267 element types. Most 
+The core BPMN notation has 116 element types, and research has found 267 element types across vendors. Most 
 diagrams use only 10 basic elements, and 85% use 14 or less. The elements beyond the core 
 set are shortcuts, that can be represented with the basic elements.
 
