@@ -33,8 +33,8 @@ The core BPMN notation has 116 element types, and research has found 267 element
 diagrams use only 10 basic elements, and 85% use 14 or less. The elements beyond the core 
 set are shortcuts, and can be represented with the basic elements.
 
-Sometimes the ambiguity in diagrams is useful. For example, the symbols in maps are not formally defined. 
-For example, on a road map, the line width does not fully correspond with the road width.
+Sometimes the ambiguity in diagrams is useful. For example, on a road map, the line width does not fully 
+correspond with the road width, so it is not formally defined.
 
 It seems BPMN is a good drawing notation for the sequence flow, but not sufficient for comprehensive formal process 
 definitions. As we cannot use simple sequence flows to show how the responsibility flows across 
