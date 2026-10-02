@@ -8,16 +8,18 @@ seotags:   [consulting,philosphy,morality,problem solving]
 tags:   [consulting,philosophy,morality,problem solving]
 ---
 
-In a fundraiser meeting for a volunteer ogranization, a former bank merger consultant said something with a knowing smirk that I have 
-carried ever since. 
+20 years ago, in a fundraiser meeting for a volunteer ogranization, a former bank merger consultant said something, with a 
+knowing smirk, that I have carried ever since. 
 
 > Everything is only what it looks like.
 >
 > -- Bank merger consultant
 
-If you have an outcome you want to achieve, if you make the facts appear so that they conform to the story, then you 
-can plausibly overcome any objection that may arises. This principle appears relevant for bank mergers, and there is
-some evidence that it often works in other contexts too, although I feel it is morally objectionable.
+If you make the facts appear so that they conform to the story, then you can plausibly overcome any objection that may 
+arise, and you can influence the outcome to the direction you want. 
+
+This principle appears relevant for bank mergers, and there is some evidence that it often works in other contexts too,
+although it is morally objectionable.
 
 But the opposite is also true: nothing is what it looks like.
 
