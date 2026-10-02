@@ -25,12 +25,12 @@ But the opposite is also true: nothing is what it looks like.
 
 ***
 
-It is basic human tendency that we shortcut and simplify when we describe something. Sometimes we obfuscate it half-consciously. We may 
-be embarrased about the current situation, so there may be a shared illusion that the issue will be fixed by somebody else, although the 
+It is basic human tendency that we shortcut and simplify when we describe something. Sometimes we obfuscate half-consciously. We may 
+be embarrased about the current situation, so we uphold a shared illusion that the issue will be fixed by somebody else, although the 
 situation has been worsening for years.
 
-On the short term, you may gain some glory if you surface issues. But you are not making long-term friends by it. Any issue is 
-something somebody else should have handled, and that person might not like it if they think it makes them look bad.
+On the short term, you may gain some glory if you surface issues. But you are not making long-term friends by doing it. Any issue is 
+something somebody else should have handled, and that person might not like you making noise about it, if they think it makes them look bad.
 
 The second-order problem is that messager will be shot. The third-order problem is that people start avoiding being the messanger
 if the messanger is always shot.
