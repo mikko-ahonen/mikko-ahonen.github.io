@@ -16,14 +16,13 @@ phloem (fin. nila) and cambium (fin. jälsi) layers on pine tree inner bark, so 
 Pine bark flour (fin. pettu) was added to bread during the times of scarcity. Lusa was carved from wood. Later, 
 lusa was also used to talk about any tool that you carve from wood specifically for the purpose.
 
-***
-
 In lusa-oriented development, you first envision and create the tool for doing the work, and then complete the work using 
 that tool.
 
-Lisp is especially well suited for this kind of purpose. You often invent some form of domain-specicic language (DSL) that
-you can solve the problem with, fix the problem using that language, and only then 
-implement the DSL.
+***
+
+Lisp is especially well suited for this kind of purpose. You often invent some form of domain-specific language (DSL) that
+you can solve the problem with, fix the problem using that language, and only then implement the DSL.
 
 During AI age, I find myself often approaching problems with lusa orientation, as the cost difference between generic and one-off
 solutions is narrowing. I often start by envisioning a tool that would solve my problem, just more more generally,
