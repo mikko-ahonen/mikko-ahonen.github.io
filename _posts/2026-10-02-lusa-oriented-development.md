@@ -4,8 +4,8 @@ title:  Lusa-oriented development
 description: 'Sometimes you need to start by creating a tool to do the work you need to do'
 date:   2026-10-02 12:28:00 +0300
 image:  '/images/lusa.png'
-seotags:   [consulting,philosphy,lusa-oriented development]
-tags:   [development,philosophy,lusa-oriented development]
+seotags:   [consulting,philosphy,lusa-oriented development,ai,development]
+tags:   [development,philosophy,lusa-oriented development,ai,development]
 ---
 
 It is a human tendency want to jump to solutions. Sometimes a different approach may help you to more effectively to do the work 
