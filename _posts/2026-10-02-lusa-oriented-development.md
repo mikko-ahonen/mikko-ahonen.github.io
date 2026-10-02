@@ -11,7 +11,7 @@ tags:   [development,philosophy,lusa-oriented development]
 It is a human tendency want to jump to solutions. Sometimes a different approach may help you to more effectively to do the work 
 you need to do. But to figure that out, you need to take a step back, and first think what is the best way to solve the issue.
 
-In Finlnad, <a href="https://fi.wikipedia.org/wiki/Lusa">lusa</a> was a traditional tool used to seperate
+In Finland, <a href="https://fi.wikipedia.org/wiki/Lusa">lusa</a> was a traditional tool used to seperate
 phloem (fin. nila) and cambium (fin. jälsi) layers on pine tree inner bark, so you could create pine bark flour.
 Pine bark flour (fin. pettu) was added to bread during the times of scarcity. Lusa was carved from wood. Later, 
 lusa was also used to talk about any tool that you carve from wood specifically for the purpose.
