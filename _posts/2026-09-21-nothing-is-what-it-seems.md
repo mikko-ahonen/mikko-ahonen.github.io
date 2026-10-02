@@ -12,11 +12,12 @@ In a fundraiser meeting for a volunteer ogranization, a former bank merger consu
 carried ever since. 
 
 > Everything is only what it looks like.
+>
 > -- Bank merger consultant
 
-He meant that if you have an outcome you want to achieve, you should make the facts appear so that they conform to the story. That 
-way you can plausibly overcome any objection. This principle appears very relevant for bank mergers, and there is
-some evidence that often works, although it feels morally objectionable.
+If you have an outcome you want to achieve, if you make the facts appear so that they conform to the story, then you 
+can plausibly overcome any objection that may arises. This principle appears relevant for bank mergers, and there is
+some evidence that it often works in other contexts too, although I feel it is morally objectionable.
 
 But the opposite is also true: nothing is what it looks like.
 
