@@ -32,11 +32,11 @@ situation has been worsening for years.
 On the short term, you may gain some glory if you surface issues. But you are not making long-term friends by doing it. Any issue is 
 something somebody else should have handled, and that person might not like you making noise about it, if they think it makes them look bad.
 
-The second-order problem is that messager will be shot. The third-order problem is that people start avoiding being the messanger
-if the messanger is always shot.
+The second-order problem is that the messanger will be shot. The third-order problem is that people start avoiding messanger role if they
+are always shot.
 
-The consequence of this is that if you dig deeper into almost anything, it is often very different from what it looks like on
-the surface.
+The consequence is that digging deeper into almost anything, you find it very different from what it looks like on the surface.
+Therefore, nothing is what it looks like.
 
 ***
 
