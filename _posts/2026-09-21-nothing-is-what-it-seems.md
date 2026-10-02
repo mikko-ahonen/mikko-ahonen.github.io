@@ -15,7 +15,7 @@ knowing smirk, that I have carried ever since.
 >
 > -- Bank merger consultant
 
-If you make the facts appear so that they conform to the story, then you can plausibly overcome any objection that may 
+If you make the facts appear so that they conform to your story, then you can plausibly overcome any objection that may 
 arise, and you can influence the outcome to the direction you want. 
 
 This principle appears relevant for bank mergers, and there is some evidence that it often works in other contexts too,
