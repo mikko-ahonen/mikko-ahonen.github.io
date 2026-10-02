@@ -21,14 +21,13 @@ lusa was also used to talk about any tool that you carve from wood specifically 
 In lusa-oriented development, you first envision and create the tool for doing the work, and then complete the work using 
 that tool.
 
-Lisp is especially well suited for this kind of purpose. You often think what would be a good language for solving the 
-problem, some kind of domain-specific language (DSL), then implement your solution in that language. So you use the
-language even before you have the solution, and later you implement your new DSL.
+Lisp is especially well suited for this kind of purpose. You often invent some form of domain-specicic language (DSL) that
+you can solve the problem with, fix the problem using that language, and only then 
+implement the DSL.
 
 During AI age, I find myself often approaching problems with lusa orientation, as the cost difference between generic and one-off
-solutions is narrowing. I often start by envisioning a tool that would solve my problem, more more generally,
-and then implement that tool. Then I use the tool to solve my problem. Often, I try to start by giving it a name and reserve a
-domain name as well.
+solutions is narrowing. I often start by envisioning a tool that would solve my problem, just more more generally,
+and then implement that tool. Then I use the tool to solve my problem. Often, I give it a name and reserve a domain name as well.
 
 ***
 
