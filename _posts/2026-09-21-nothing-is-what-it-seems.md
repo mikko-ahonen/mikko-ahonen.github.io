@@ -13,7 +13,7 @@ knowing smirk, that I have carried ever since.
 
 > Everything is only what it looks like.
 >
-> -- Bank merger consultant
+> &mdash; Bank merger consultant
 
 If you make the facts appear so that they conform to the story, then you can plausibly overcome any objection that may 
 arise, and you can influence the outcome to the direction you want. 
